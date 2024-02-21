@@ -4,21 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
     <title>sed sansum</title>
   </head>
-  <body>
-    <select id="language_selector">
-      <option value="en">EN</option>
-      <option value="pl">PL</option>
-    </select>
-    <h1 class="text-4xl mt-10 mb-10 text-center language-text" data-key="title"></h1>
-    <div class="max-w-[1440px] m-auto">
-      <div class="grid grid-cols-12 gap-6">
-        <div class="col-span-6 bg-gray-200">6</div>
-        <div class="col-span-3 bg-gray-200">3</div>
-        <div class="col-span-3 bg-gray-300">3</div>
-      </div>
+  <body style="font-family: 'Playfair Display', serif;">
+    <div class="bg-[#EDEDED]">
+        <nav class="max-w-[1440px] m-auto flex justify-between px-8 pt-10 ">
+            <img src="./imgs/LOGO.svg" alt="" class="col-span-3" />
+            <div class="gap-12">
+              <a href="#" class="text-2xl px-4 font-normal" data-key="about"></a>
+              <a href="#" class="text-2xl px-4 font-normal" data-key="price"></a>
+              <a href="#" class="text-2xl px-4 font-normal" data-key="opinions"></a>
+              <a href="#" class="text-2xl px-4 font-normal" data-key="contacts"></a>
+              <a href="#" class="text-2xl px-4 font-normal" data-key="faq"></a>
+            </div>
+            <div class="flex justify-around mb-4">
+              <div
+                onclick="changeLanguage('en')"
+                class="language-option cursor-pointer"
+              >
+                en
+              </div>
+              <div class="px-2 font-light">|</div>
+              <div
+                onclick="changeLanguage('pl')"
+                class="language-option cursor-pointer"
+              >
+                pl
+              </div>
+            </div>
+          </nav>
+      
+          
+          <div class="max-w-[1440px] m-auto px-8 mt-10 pb-40">
+            <div class="grid grid-cols-12 gap-6">
+              <div class="col-span-6 bg-black text-white text-center">6</div>
+              <div class="col-span-3 bg-black text-white text-center">3</div>
+              <div class="col-span-3 bg-black text-white text-center">3</div>
+            </div>
+          </div>
     </div>
+
 
     <script src="./script.js"></script>
   </body>
