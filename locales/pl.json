@@ -1,3 +1,8 @@
 {
-  "title": "Witaj świecie"
+  "title": "Witaj świecie",
+  "about": "O nas",
+  "price": "Cennik",
+  "opinions": "Opinie",
+  "contacts": "Kontakty",
+  "faq": "FAQ"
 }

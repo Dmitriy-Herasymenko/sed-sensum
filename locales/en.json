@@ -1,3 +1,8 @@
 {
-  "title": "Hello world!"
+  "title": "Hello world!",
+  "about": "About us",
+  "price": "Price list",
+  "opinions": "Opinions",
+  "contacts": "Contacts",
+  "faq": "FAQ"
 }
