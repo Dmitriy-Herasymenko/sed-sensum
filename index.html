@@ -13,47 +13,64 @@
     <title>sed sansum</title>
   </head>
   <body style="font-family: 'Playfair Display', serif">
-    <div class="bg-[#EDEDED]">
-      <nav class="max-w-[1440px] m-auto flex justify-between px-8 pt-10">
-        <img src="./imgs/LOGO.svg" alt="" class="col-span-3" />
-        <div class="gap-12">
-          <a href="#" class="text-2xl px-4 font-normal" data-key="about"></a>
-          <a href="#" class="text-2xl px-4 font-normal" data-key="price"></a>
-          <a href="#" class="text-2xl px-4 font-normal" data-key="opinions"></a>
-          <a href="#" class="text-2xl px-4 font-normal" data-key="contacts"></a>
-          <a href="#" class="text-2xl px-4 font-normal" data-key="faq"></a>
-        </div>
-        <div class="flex justify-around mb-4">
-          <div
-            onclick="changeLanguage('en')"
-            class="language-option cursor-pointer"
-          >
-            en
+    <div class="max-w-[1440px] px-10">
+      <div class="bg-[#EDEDED]">
+        <nav class="m-auto flex justify-between px-8 pt-10">
+          <img src="./imgs/LOGO.svg" alt="" class="col-span-3" />
+          <div class="gap-12">
+            <a href="#" class="text-2xl px-4 font-normal" data-key="about"></a>
+            <a href="#" class="text-2xl px-4 font-normal" data-key="price"></a>
+            <a
+              href="#"
+              class="text-2xl px-4 font-normal"
+              data-key="opinions"
+            ></a>
+            <a
+              href="#"
+              class="text-2xl px-4 font-normal"
+              data-key="contacts"
+            ></a>
+            <a href="#" class="text-2xl px-4 font-normal" data-key="faq"></a>
           </div>
-          <div class="px-2 font-light">|</div>
-          <div
-            onclick="changeLanguage('pl')"
-            class="language-option cursor-pointer"
-          >
-            pl
+          <div class="flex justify-around mb-4">
+            <div
+              onclick="changeLanguage('en')"
+              class="language-option cursor-pointer"
+            >
+              en
+            </div>
+            <div class="px-2 font-light">|</div>
+            <div
+              onclick="changeLanguage('pl')"
+              class="language-option cursor-pointer"
+            >
+              pl
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
 
-      <div class="max-w-[1440px] m-auto px-8 mt-10 pb-40">
-        <div class="grid grid-cols-12 gap-6">
-          <div class="col-span-6 flex flex-col justify-center">
-            <h2 data-key="proffesionalTitle" class="font-bold text-6xl leading-[72px]"></h2>
-            <p data-key="proffesionalSubtitle" class="font-normal mt-8 text-2xl max-w-[473px]"></p>
-            <div class="flex justify-center mt-8 max-w-[473px]">
-                <button data-key="proffesionalBtn" class="bg-[#585656] rounded-3xl px-6  py-2	text-2xl font-normal text-white"></button>
+        <div class="m-auto px-8 mt-10 pb-20">
+          <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-6 flex flex-col justify-center">
+              <h2
+                data-key="proffesionalTitle"
+                class="font-bold text-6xl leading-[72px]"
+              ></h2>
+              <p
+                data-key="proffesionalSubtitle"
+                class="font-normal mt-8 text-2xl max-w-[473px]"
+              ></p>
+              <div class="flex justify-center mt-8 max-w-[473px]">
+                <button
+                  data-key="proffesionalBtn"
+                  class="bg-[#585656] rounded-3xl px-6 py-2 text-2xl font-normal text-white"
+                ></button>
               </div>
+            </div>
+            <div class="col-span-6 bg-[#D9D9D9] h-[530px]"></div>
           </div>
-          <div class="col-span-6  bg-[#D9D9D9] h-[530px] "></div>
         </div>
       </div>
-
-
     </div>
 
     <script src="./script.js"></script>
