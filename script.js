@@ -70,33 +70,35 @@ function renderContent(translations) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  languageOptions = document.querySelectorAll('.language-option');
-
-  const defaultLanguage = localStorage.getItem('language') || 'pl';
-
-  changeLanguage(defaultLanguage);
-});
-
-
 document.addEventListener('DOMContentLoaded', function() {
   const readMoreBtns = document.querySelectorAll('.read-more-btn');
 
   readMoreBtns.forEach(function(btn) {
     btn.addEventListener('click', function() {
       const textContainers = document.querySelectorAll('.col-span-8 .hidden');
-      textContainers.forEach(function(container) {
-        container.classList.toggle('hidden');
-      });
-      if (btn.textContent === 'czytaj więcej') {
-        btn.textContent = 'ukryj';
-      } else {
-        btn.textContent = 'czytaj więcej';
 
+      textContainers.forEach(function(container) {
+        const attributeValue = container.getAttribute('data-key');
+
+        if (btn.id === attributeValue) {
+          container.classList.remove('hidden');
+          container.classList.add('opened');
+        } else {
+          container.classList.add('hidden');
+          container.classList.remove('opened');
+        }
+      });
+
+      if (btn.textContent === 'Read more') {
+        btn.textContent = 'Hide';
+      } else {
+        btn.textContent = 'Read more';
       }
     });
   });
 });
+
+
 
 
 
