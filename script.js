@@ -70,6 +70,15 @@ function renderContent(translations) {
   });
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  languageOptions = document.querySelectorAll('.language-option');
+
+  const defaultLanguage = localStorage.getItem('language') || 'en';
+
+  changeLanguage(defaultLanguage);
+});
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const readMoreBtns = document.querySelectorAll('.read-more-btn');
 
@@ -77,28 +86,30 @@ document.addEventListener('DOMContentLoaded', function() {
     btn.addEventListener('click', function() {
       const textContainers = document.querySelectorAll('.col-span-8 .hidden');
 
+   
       textContainers.forEach(function(container) {
         const attributeValue = container.getAttribute('data-key');
 
-        if (btn.id === attributeValue) {
-          container.classList.remove('hidden');
+        if(btn.id === attributeValue) {
+          const elementToOpen = container.querySelector('.opened'); // Находим элемент внутри контейнера с классом 'opened'
+          if (elementToOpen) {
+            elementToOpen.classList.remove('opened'); // Удаляем класс 'opened'
+            elementToOpen.classList.add('hidden'); // Добавляем класс 'hidden'
+          }
+          
+          container.classList.remove('hidden'); // Удаляем класс 'hidden' у текущего контейнера
           container.classList.add('opened');
-        } else {
-          container.classList.add('hidden');
-          container.classList.remove('opened');
         }
       });
-
       if (btn.textContent === 'Read more') {
         btn.textContent = 'Hide';
       } else {
-        btn.textContent = 'Read more';
+        btn.textContent = 'read more';
+
       }
     });
   });
 });
-
-
 
 
 
