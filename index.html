@@ -94,7 +94,7 @@
             class="col-span-12 text-center text-4xl font-normal"
             data-key="uniqueOfferTitle"
           ></h3>
-          <p class="col-span-12 text-center text-base" data-key="uniqueOfferSubtitle"></p>
+          <p class="col-span-12 text-center text-2xl" data-key="uniqueOfferSubtitle"></p>
         </div>
         <div class="grid grid-cols-12 gap-6 mt-24">
           <div class="flex flex-col col-span-3">
@@ -259,7 +259,7 @@
     
         <div class="grid grid-cols-12 gap-6 mt-6">
               <div class="col-start-5 col-span-8 flex justify-end">
-                <button id="questionDescriptionHidden2" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full">Read more</button>
+                <!-- <button id="questionDescriptionHidden2" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full">Read more</button> -->
               </div>
         </div>
 
@@ -273,7 +273,7 @@
     
         <div class="grid grid-cols-12 gap-6 mt-6">
               <div class="col-start-5 col-span-8 flex justify-end">
-                <button id="questionDescriptionHidden3" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full">Read more</button>
+                <!-- <button id="questionDescriptionHidden3" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full">Read more</button> -->
               </div>
         </div>
 
@@ -288,7 +288,7 @@
     
         <div class="grid grid-cols-12 gap-6 mt-6">
               <div class="col-start-5 col-span-8 flex justify-end">
-                <button id="questionDescriptionHidden4" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full">Read more</button>
+                <!-- <button id="questionDescriptionHidden4" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full">Read more</button> -->
               </div>
         </div>
 
@@ -418,65 +418,71 @@
  
       
       <!-- contact us block -->
-      <div class="m-auto max-w-[1440px] bg-[#062B22] px-32 pb-40">
-              <div class="grid grid-cols-12 gap-6">
-                <img  src="./assets/imgs/logo_footer.svg" class="col-span-12 mt-10"  />
-              </div>
-              <div class="grid grid-cols-12 gap-6 mt-10">
-                
-              <div class="col-span-6  mt-10 " id="contactUs">
-                  <form class="text-[#FCF5DB]">
-                    <h3 data-key="contactUsTitle"></h3>
-                    <div class="mb-5 mt-5 text-3xl font-normal "> 
-                      <label for="userName" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsName"></label>
-                      <input type="userName" id="userName" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name" required />
-                    </div>
-                    <div class="mb-5">
-                      <label for="userName" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsPhone"></label>
-                      <input type="userName" id="userName" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="+48 607 737 757" required />
-                    </div>
-                    <div class="mb-5">
-                      <label for="userName" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsMail"></label>
-                      <input type="userName" id="userName" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="email@gmail.com" required />
-                    </div>
-                    <div class="mb-5 ">
-                      <label for="message" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsMessage"></label>
-                      <textarea type="textArea" id="message" class="w-full h-[106px] bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 " placeholder="message" required > </textarea>
-                    </div>
-                    <div class="w-full flex justify-end">
-                      <button type="submit" class="py-2.5  mt-4 px-5  mb-2 text-sm font-medium text-[#FCF5DB] focus:outline-none rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100" data-key="contactUsBtn"></button>
-                    </div>
-  
-                  </form>
-              </div>
-              
-              <div class=" col-start-9 col-end-12 mt-10 text-[#FCF5DB] ">
-                <h3 data-key="contactUsTitleSecond">Contacts</h3>
-                <div class="flex gap-6 mt-10 text-sm font-light text-[#FCF5DB]">
-                  <div data-key="contactUsTitlePhone2">Телефон:</div>
-                  <div data-key="contactUsPhone2">+380 00 000 00 00</div>
+      <div class="bg-[#062B22] w-full">
+        <div class="m-auto max-w-[1440px] px-32 pb-12">
+          <div class="grid grid-cols-12 gap-6">
+            <img  src="./assets/imgs/logo_footer.svg" class="col-span-12 mt-10"  />
+          </div>
+          <div class="grid grid-cols-12 gap-6 mt-10">
+            
+          <div class="col-span-6  mt-10 " id="contactUs">
+              <form class="text-[#FCF5DB]">
+                <h3 data-key="contactUsTitle"></h3>
+                <div class="mb-5 mt-5 text-3xl font-normal "> 
+                  <label for="userName" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsName"></label>
+                  <input type="userName" id="userName" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name" required />
                 </div>
-                <div class="flex gap-6 mt-5 text-sm font-light text-[#FCF5DB]">
-                  <div data-key="contactUsTitleMail2">Пошта:</div>
-                  <div data-key="contactUsMail2">banderogus@email.com  </div>
+                <div class="mb-5">
+                  <label for="userName" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsPhone"></label>
+                  <input type="userName" id="userName" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="+48 607 737 757" required />
                 </div>
-                <div class="flex gap-6 mt-5 text-sm font-light text-[#FCF5DB]">
-                  <div data-key="contactUsTitleAdress">Адреса:</div>
-                  <div data-key="contactUsAdress">Київ, м-н Незалежності, 16</div>
+                <div class="mb-5">
+                  <label for="userName" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsMail"></label>
+                  <input type="userName" id="userName" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="email@gmail.com" required />
                 </div>
-                <h3 class="mt-10 text-[#FCF5DB]" data-key="contactUsTitleSocial">Social Network</h3>
-                <div class="mt-5 flex gap-6">
-                  <a href="https://wa.me/+48607737757"><img src="./assets/icons/WhatsApp.svg" /></a>
-                  <a href="https://www.facebook.com/filip.kostek.1"><img src="./assets/icons/Facebook.svg" /></a>
+                <div class="mb-5 ">
+                  <label for="message" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsMessage"></label>
+                  <textarea type="textArea" id="message" class="w-full h-[106px] bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 " placeholder="message" required > </textarea>
                 </div>
-              </div>
-    
-             
-              </div>
-              <div class="grid grid-cols-12 gap-6">
-                <span class="col-span-12 text-center mt-14 text-[#FCF5DB]">2021 Sed Sensum</span>
-              </div>
+                <div class="w-full flex justify-end">
+                  <button type="submit" class="py-2.5  mt-4 px-5  mb-2 text-sm font-medium text-[#FCF5DB] focus:outline-none rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100" data-key="contactUsBtn"></button>
+                </div>
+
+              </form>
+          </div>
+          
+          <div class=" col-start-9 col-end-12 mt-10 text-[#FCF5DB] ">
+            <h3 data-key="contactUsTitleSecond"></h3>
+            <div class="flex gap-6 mt-10 text-sm font-light text-[#FCF5DB]">
+              <div data-key="contactUsTitlePhone2" class="min-w-[80px]"></div>
+              <div data-key="contactUsPhone2"></div>
+            </div>
+            <div class="flex gap-6 mt-5 text-sm font-light text-[#FCF5DB]">
+              <div data-key="contactUsTitleMail2" class="min-w-[80px]"></div>
+              <div data-key="contactUsMail2"> </div>
+            </div>
+            <div class="flex gap-6 mt-5 text-sm font-light text-[#FCF5DB]">
+              <div data-key="contactUsTitleAdress" class="min-w-[80px]"></div>
+              <div data-key="contactUsAdress"></div>
+            </div>
+            <h3 class="mt-10 text-[#FCF5DB]" data-key="contactUsTitleSocial"></h3>
+            <div class="mt-5 flex gap-6">
+              <a href="https://wa.me/+48607737757"><img src="./assets/icons/WhatsApp.svg" /></a>
+              <a href="https://www.facebook.com/filip.kostek.1"><img src="./assets/icons/Facebook.svg" /></a>
+            </div>
+          </div>
+
+         
+          </div>
+          <div class="grid grid-cols-12 gap-6">
+            <span class="col-span-12 text-center mt-12 text-[#FCF5DB]">2021 Sed Sensum</span>
+          </div>
+  </div>
+
       </div>
+   
+
+
       </div>
     </div>
 
