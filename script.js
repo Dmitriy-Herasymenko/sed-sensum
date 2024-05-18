@@ -78,38 +78,39 @@ document.addEventListener("DOMContentLoaded", function() {
   changeLanguage(defaultLanguage);
 });
 
+// document.addEventListener('DOMContentLoaded', function() {
+//   document.addEventListener('click', function(event) {
+//     if (event.target.classList.contains('read-more-btn')) {
+//       const btn = event.target;
+//       const hiddenText = document.querySelector(`p[data-key="${btn.id}"]`);
+//       if (hiddenText) {
+//         hiddenText.classList.toggle('hidden');
+//         btn.textContent = hiddenText.classList.contains('hidden') ? 'Read more' : 'Hide';
+//       }
+//     }
+//   });
+// });
 
 document.addEventListener('DOMContentLoaded', function() {
-  const readMoreBtns = document.querySelectorAll('.read-more-btn');
-
-  readMoreBtns.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      const textContainers = document.querySelectorAll('.col-span-8 .hidden');
-
-   
-      textContainers.forEach(function(container) {
-        const attributeValue = container.getAttribute('data-key');
-
-        if(btn.id === attributeValue) {
-          const elementToOpen = container.querySelector('.opened'); // Находим элемент внутри контейнера с классом 'opened'
-          if (elementToOpen) {
-            elementToOpen.classList.remove('opened'); // Удаляем класс 'opened'
-            elementToOpen.classList.add('hidden'); // Добавляем класс 'hidden'
-          }
-          
-          container.classList.remove('hidden'); // Удаляем класс 'hidden' у текущего контейнера
-          container.classList.add('opened');
+  document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('read-more-btn')) {
+      const btn = event.target;
+      const hiddenText = document.querySelector(`p[data-key="${btn.id}"]`);
+      if (hiddenText) {
+        if (hiddenText.style.maxHeight && hiddenText.style.maxHeight !== '0px') {
+          hiddenText.style.maxHeight = '0px';
+          btn.textContent = 'Read more';
+        } else {
+          hiddenText.style.maxHeight = hiddenText.scrollHeight + 'px';
+          btn.textContent = 'Hide';
         }
-      });
-      if (btn.textContent === 'Read more') {
-        btn.textContent = 'Hide';
-      } else {
-        btn.textContent = 'read more';
-
       }
-    });
+    }
   });
 });
+
+
+
 
 
 

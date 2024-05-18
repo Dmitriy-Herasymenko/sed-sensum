@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <title>sed sansum</title>
+    <!-- Убедитесь, что эти классы включены в Tailwind CSS конфигурации -->
+<style>
+  .max-h-0 { max-height: 0; }
+  .transition-all { transition: all 0.1s ease-in-out; }
+</style>
+
   </head>
   <body style="font-family: 'STIX Two Text', serif" class="bg-[#FCF5DB]">
     <!-- px-32 -->
@@ -202,17 +208,17 @@
           ></h3>
         </div>
 
-        <div class="grid grid-cols-12 gap-6 mt-12">
-          <span
-            class="col-span-4 text-2xl font-bold color-[#17161C]"
-            data-key="questiontitle1"
-          ></span>
-          <div class="col-span-8">
-            <p class="text-base" data-key="questionDescription1"></p>
-            <p class="hidden" data-key="questionDescriptionHidden1"></p>
-            <!-- <button class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">czytaj więcej</button> -->
-          </div>
-        </div>
+
+
+
+
+    <div class="grid grid-cols-12 gap-6 mt-12">
+      <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle1"></span>
+      <div class="col-span-8 text-container">
+        <p class="text-base" data-key="questionDescription1"></p>
+        <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden1"></p>
+      </div>
+    </div>
 
         <div class="grid grid-cols-12 gap-6 mt-6">
           <div class="col-start-5 col-span-8 flex justify-end">
@@ -221,7 +227,7 @@
         </div>
 
 
-        <div class="grid grid-cols-12 gap-6 mt-12">
+        <!-- <div class="grid grid-cols-12 gap-6 mt-12">
           <span
             class="col-span-4 text-2xl font-bold color-[#17161C]"
             data-key="questiontitle2"
@@ -229,92 +235,88 @@
           <div class="col-span-8">
             <p class="text-base" data-key="questionDescription2"></p>
             <p class="hidden" data-key="questionDescriptionHidden2"></p>
-            <!-- <button class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">czytaj więcej</button> -->
           </div>
-        </div>
-
+        </div> -->
+<!-- 
         <div class="grid grid-cols-12 gap-6 mt-6">
           <div class="col-start-5 col-span-8 flex justify-end">
             <button id="questionDescriptionHidden2" class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">Read more</button>
           </div>
-        </div>
-
+        </div> -->
 
         <div class="grid grid-cols-12 gap-6 mt-12">
-          <span
-            class="col-span-4 text-2xl font-bold color-[#17161C]"
-            data-key="questiontitle3"
-          ></span>
-          <div class="col-span-8">
+          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle2"></span>
+          <div class="col-span-8 text-container">
+            <p class="text-base" data-key="questionDescription2"></p>
+            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden2"></p>
+          </div>
+        </div>
+    
+        <div class="grid grid-cols-12 gap-6 mt-6">
+              <div class="col-start-5 col-span-8 flex justify-end">
+                <button id="questionDescriptionHidden2" class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">Read more</button>
+              </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-6 mt-12">
+          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle3"></span>
+          <div class="col-span-8 text-container">
             <p class="text-base" data-key="questionDescription3"></p>
-            <p class="hidden" data-key="questionDescriptionHidden3"></p>
-            <!-- <button class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">czytaj więcej</button> -->
+            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden3"></p>
           </div>
         </div>
-
+    
         <div class="grid grid-cols-12 gap-6 mt-6">
-          <div class="col-start-5 col-span-8 flex justify-end">
-            <button id="questionDescriptionHidden3" class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">Read more</button>
-          </div>
+              <div class="col-start-5 col-span-8 flex justify-end">
+                <button id="questionDescriptionHidden3" class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">Read more</button>
+              </div>
         </div>
 
 
         <div class="grid grid-cols-12 gap-6 mt-12">
-          <span
-            class="col-span-4 text-2xl font-bold color-[#17161C]"
-            data-key="questiontitle4"
-          ></span>
-          <div class="col-span-8">
+          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle4"></span>
+          <div class="col-span-8 text-container">
             <p class="text-base" data-key="questionDescription4"></p>
-            <p class="hidden" data-key="questionDescriptionHidden4"></p>
-            <!-- <button class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">czytaj więcej</button> -->
+            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden4"></p>
           </div>
         </div>
-
+    
         <div class="grid grid-cols-12 gap-6 mt-6">
-          <div class="col-start-5 col-span-8 flex justify-end">
-            <button id="questionDescriptionHidden4" class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">Read more</button>
-          </div>
+              <div class="col-start-5 col-span-8 flex justify-end">
+                <button id="questionDescriptionHidden4" class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">Read more</button>
+              </div>
         </div>
 
 
         <div class="grid grid-cols-12 gap-6 mt-12">
-          <span
-            class="col-span-4 text-2xl font-bold color-[#17161C]"
-            data-key="questiontitle5"
-          ></span>
-          <div class="col-span-8">
+          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle5"></span>
+          <div class="col-span-8 text-container">
             <p class="text-base" data-key="questionDescription5"></p>
-            <p class="hidden" data-key="questionDescriptionHidden5"></p>
-            <!-- <button class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">czytaj więcej</button> -->
+            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden5"></p>
           </div>
         </div>
-
+    
         <div class="grid grid-cols-12 gap-6 mt-6">
-          <div class="col-start-5 col-span-8 flex justify-end">
-            <button id="questionDescriptionHidden5" class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">Read more</button>
-          </div>
+              <div class="col-start-5 col-span-8 flex justify-end">
+                <button id="questionDescriptionHidden5" class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">Read more</button>
+              </div>
         </div>
 
-        
-        
+
         <div class="grid grid-cols-12 gap-6 mt-12">
-          <span
-            class="col-span-4 text-2xl font-bold color-[#17161C]"
-            data-key="questiontitle6"
-          ></span>
-          <div class="col-span-8">
+          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle6"></span>
+          <div class="col-span-8 text-container">
             <p class="text-base" data-key="questionDescription6"></p>
-            <p class="hidden" data-key="questionDescriptionHidden6"></p>
-            <!-- <button class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">czytaj więcej</button> -->
+            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden6"></p>
           </div>
         </div>
-
+    
         <div class="grid grid-cols-12 gap-6 mt-6">
-          <div class="col-start-5 col-span-8 flex justify-end">
-            <button id='questionDescriptionHidden6' class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">Read more</button>
-          </div>
+              <div class="col-start-5 col-span-8 flex justify-end">
+                <button id="questionDescriptionHidden6" class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">Read more</button>
+              </div>
         </div>
+    
 
   
       </div>
