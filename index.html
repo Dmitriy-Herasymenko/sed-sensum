@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +13,10 @@
 <style>
   .max-h-0 { max-height: 0; }
   .transition-all { transition: all 0.1s ease-in-out; }
+  html {
+  scroll-behavior: smooth;
+}
+  
 </style>
 
   </head>
@@ -25,19 +30,19 @@
         <nav class="m-auto max-w-[1440px] px-32 flex justify-between  pt-10">
           <img src="./assets/imgs/LOGO.svg" alt="" class="col-span-3" />
           <div class="gap-12">
-            <a href="#" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal" data-key="about"></a>
-            <a href="#" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal" data-key="price"></a>
+            <a href="#aboutUs" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal" data-key="about"></a>
+            <a href="#priceList" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal" data-key="price"></a>
             <a
-              href="#"
+              href="#opinions"
               class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal"
               data-key="opinions"
             ></a>
             <a
-              href="#"
+              href="#contactUs"
               class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal "
               data-key="contacts"
             ></a>
-            <a href="#" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal" data-key="faq"></a>
+            <a href="#faq" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal" data-key="faq"></a>
           </div>
           <div class="flex justify-around mb-4">
             <div
@@ -181,7 +186,7 @@
 
 
     <!-- translator block -->
-<div class="mt-40 bg-[#168D7140] w-full pb-10">
+<div class="mt-40 bg-[#168D7140] w-full pb-10" id="aboutUs">
   <div class="max-w-[1440px] m-auto px-32">
     <div class="grid grid-cols-12 gap-6">
       <h3 class="col-span-12 text-center text-6xl font-bold color-[#17161C] font-bold mt-10" data-key="translatorTitle"></h3>
@@ -201,7 +206,7 @@
       <!-- questions block-->
       <div class="mt-40 m-auto max-w-[1440px] px-32">
 
-        <div class="grid grid-cols-12 gap-6">
+        <div class="grid grid-cols-12 gap-6" id="faq">
           <h3
             class="col-span-12 text-center text-6xl font-bold	 color-[#17161C] font-bold mt-10"
             data-key="questionsTitle"
@@ -322,7 +327,7 @@
       </div>
 
       <!-- product block -->
-      <div class="bg-[#168D7133] pb-10">
+      <div class="bg-[#168D7133] pb-10" id="priceList">
         <div class=" m-auto max-w-[1440px] mt-40  before:w-full px-32">
           <div class="grid grid-cols-12 gap-6">
             <h3
@@ -403,7 +408,7 @@
       </div>
 
        <!-- product block -->
-      <div class="bg-[#168D7133] pb-40">
+      <div class="bg-[#168D7133] pb-40" id="opinions">
               <div class=" m-auto max-w-[1440px]   before:w-full px-32">
                 <div class="grid grid-cols-12 gap-6">
                   <h3
@@ -439,7 +444,7 @@
               </div>
               <div class="grid grid-cols-12 gap-6 mt-10">
                 
-              <div class="col-span-6  mt-10 ">
+              <div class="col-span-6  mt-10 " id="contactUs">
                   <form class="text-[#FCF5DB]">
                     <h3>Напишіть листа</h3>
                     <div class="mb-5 mt-5 text-3xl font-normal "> 
