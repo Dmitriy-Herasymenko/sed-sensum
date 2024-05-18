@@ -47,16 +47,16 @@
           <div class="flex justify-around mb-4">
             <div
               onclick="changeLanguage('en')"
-              class="language-option cursor-pointer text-base hover:text-[#168D71] focus:text-[#168D71]"
+              class="language-option cursor-pointer  underline-offset-4 text-base hover:text-[#168D71] focus:text-[#168D71]"
             >
-              en
+              En
             </div>
             <div class="px-2 font-light">|</div>
             <div
               onclick="changeLanguage('pl')"
-              class="language-option cursor-pointer text-base hover:text-[#168D71] focus:text-[#168D71]"
+              class="language-option cursor-pointer  underline-offset-4 text-base hover:text-[#168D71] focus:text-[#168D71]"
             >
-              pl
+              Pl
             </div>
           </div>
         </nav>
@@ -339,65 +339,45 @@
             
             <div class="col-span-4  bg-[#FCF5DB] flex flex-col items-center mt-10 ">
               <img  src="./assets/icons/price1.svg"  class="mt-16"/>
-              <!-- <span class="mt-10 font-normal text-2xl" data-key="productTitleBlock1"></span>
-               -->
-               <span class="mt-20 text-center">Zwykle tłumaczenie
-                <br /> (16000 znaków)</span>
-                <span class="mt-10 text-center">50 PLN/str</span>
- 
-              <!-- <div class="mt-5 flex gap-6 items-center">
-                <span class="text-lg font-normal" data-key="productSize"></span>
-                <select name="" id="" class="border w-32 border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:border-gray-600 dark:placeholder-gray-400 ">
-                  <option value="l">L</option>
-                  <option value="xl">XL</option>
-                  <option value="xxl">XXL</option>
-                </select>
-              </div> -->
-              <button type="button" class="w-3/6  py-2.5  mt-10 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0" data-key="productBtn">Замовити</button>
-              <div class="mt-10"></div>
+       
+               <span class="mt-20 text-center">
+                  <p data-key="productTitle1Block1"></p>
+                  <p data-key="productTitle2Block1"></p>
+                </span>
+                <span  data-key="productPriceBlock1" class="mt-10 text-center"></span>
+                <span data-key="productPriceExpressBlock1"></span>
+
+                <button type="button" class="w-3/6  py-2.5  mt-10 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0" data-key="productBtn"></button>
+                <div class="mt-10"></div>
        
             </div>
 
             <div class="col-span-4  bg-[#FCF5DB] flex flex-col items-center mt-10 ">
               <img  src="./assets/icons/price2.svg"  class="mt-16"/>
-              <!-- <span class="mt-10 font-normal text-2xl" data-key="productTitleBlock1"></span>
-               -->
-               <span class="mt-20 text-center">Tłumaczenie przysięgłe
-                <br /> ( 1125 znaków)
-               </span>
-                <span class="mt-10 text-center">50 PLN/str</span>
- 
-              <!-- <div class="mt-5 flex gap-6 items-center">
-                <span class="text-lg font-normal" data-key="productSize"></span>
-                <select name="" id="" class="border w-32 border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:border-gray-600 dark:placeholder-gray-400 ">
-                  <option value="l">L</option>
-                  <option value="xl">XL</option>
-                  <option value="xxl">XXL</option>
-                </select>
-              </div> -->
-              <button type="button" class="w-3/6  py-2.5  mt-10 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0">Замовити</button>
+              
+              <span class="mt-20 text-center">
+                <p data-key="productTitle1Block2"></p>
+                <p data-key="productTitle2Block2"></p>
+              </span>
+              <span  data-key="productPriceBlock2" class="mt-10 text-center"></span>
+              <span data-key="productPriceExpressBlock2"></span>
+
+              <button type="button" class="w-3/6  py-2.5  mt-10 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0" data-key="productBtn"></button>
               <div class="mt-10"></div>
        
             </div>
 
             <div class="col-span-4  bg-[#FCF5DB] flex flex-col items-center mt-10 ">
               <img  src="./assets/icons/price3.svg"  class="mt-16"/>
-              <!-- <span class="mt-10 font-normal text-2xl" data-key="productTitleBlock1"></span>
-               -->
-               <span class="mt-20 text-center">Ustne tłumaczenie
-                </span>
-                <br/>
-                <span class="mt-10 text-center">200 pln/goddinę ropoczętą</span>
- 
-              <!-- <div class="mt-5 flex gap-6 items-center">
-                <span class="text-lg font-normal" data-key="productSize"></span>
-                <select name="" id="" class="border w-32 border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:border-gray-600 dark:placeholder-gray-400 ">
-                  <option value="l">L</option>
-                  <option value="xl">XL</option>
-                  <option value="xxl">XXL</option>
-                </select>
-              </div> -->
-              <button type="button" class="w-3/6  py-2.5  mt-10 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0">Замовити</button>
+              
+              <span class="mt-20 text-center">
+                <p data-key="productTitle1Block3"></p>
+                <p data-key="productTitle2Block3"></p>
+              </span>
+              <span  data-key="productPriceBlock3" class="mt-[80px] text-center"></span>
+              <div data-key="productPriceExpressBlock3"></div>
+
+              <button type="button" class="w-3/6  py-2.5  mt-10 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0 mt-[50px]" data-key="productBtn">Замовити</button>
               <div class="mt-10"></div>
        
             </div>
@@ -446,41 +426,45 @@
                 
               <div class="col-span-6  mt-10 " id="contactUs">
                   <form class="text-[#FCF5DB]">
-                    <h3>Напишіть листа</h3>
+                    <h3 data-key="contactUsTitle"></h3>
                     <div class="mb-5 mt-5 text-3xl font-normal "> 
-                      <label for="userName" class="block mb-2 text-sm font-light text-[#FCF5DB]">Прізвище та ім’я</label>
-                      <input type="userName" id="userName" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name@flowbite.com" required />
+                      <label for="userName" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsName"></label>
+                      <input type="userName" id="userName" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name" required />
                     </div>
                     <div class="mb-5">
-                      <label for="userName" class="block mb-2 text-sm font-light text-[#FCF5DB]">Телефон</label>
-                      <input type="userName" id="userName" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name@flowbite.com" required />
+                      <label for="userName" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsPhone"></label>
+                      <input type="userName" id="userName" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="+48 607 737 757" required />
                     </div>
                     <div class="mb-5">
-                      <label for="userName" class="block mb-2 text-sm font-light text-[#FCF5DB]">Контакти</label>
-                      <input type="userName" id="userName" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name@flowbite.com" required />
+                      <label for="userName" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsMail"></label>
+                      <input type="userName" id="userName" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="email@gmail.com" required />
+                    </div>
+                    <div class="mb-5 ">
+                      <label for="message" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsMessage"></label>
+                      <textarea type="textArea" id="message" class="w-full h-[106px] bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500  w-full p-2.5 " placeholder="message" required > </textarea>
                     </div>
                     <div class="w-full flex justify-end">
-                      <button type="submit" class="py-2.5  mt-10 px-5 me-2 mb-2 text-sm font-medium text-[#FCF5DB] focus:outline-none rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Submit</button>
+                      <button type="submit" class="py-2.5  mt-4 px-5  mb-2 text-sm font-medium text-[#FCF5DB] focus:outline-none rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100" data-key="contactUsBtn"></button>
                     </div>
   
                   </form>
               </div>
               
               <div class=" col-start-9 col-end-12 mt-10 text-[#FCF5DB] ">
-                <h3>Contacts</h3>
+                <h3 data-key="contactUsTitleSecond">Contacts</h3>
                 <div class="flex gap-6 mt-10 text-sm font-light text-[#FCF5DB]">
-                  <div>Телефон:</div>
-                  <div>+380 00 000 00 00</div>
+                  <div data-key="contactUsTitlePhone2">Телефон:</div>
+                  <div data-key="contactUsPhone2">+380 00 000 00 00</div>
                 </div>
                 <div class="flex gap-6 mt-5 text-sm font-light text-[#FCF5DB]">
-                  <div>Пошта:</div>
-                  <div>banderogus@email.com  </div>
+                  <div data-key="contactUsTitleMail2">Пошта:</div>
+                  <div data-key="contactUsMail2">banderogus@email.com  </div>
                 </div>
                 <div class="flex gap-6 mt-5 text-sm font-light text-[#FCF5DB]">
-                  <div>Адреса:</div>
-                  <div>Київ, м-н Незалежності, 16</div>
+                  <div data-key="contactUsTitleAdress">Адреса:</div>
+                  <div data-key="contactUsAdress">Київ, м-н Незалежності, 16</div>
                 </div>
-                <h3 class="mt-10 text-[#FCF5DB]">Social Network</h3>
+                <h3 class="mt-10 text-[#FCF5DB]" data-key="contactUsTitleSocial">Social Network</h3>
                 <div class="mt-5 flex gap-6">
                   <a href="https://wa.me/+48607737757"><img src="./assets/icons/WhatsApp.svg" /></a>
                   <a href="https://www.facebook.com/filip.kostek.1"><img src="./assets/icons/Facebook.svg" /></a>

@@ -5,17 +5,20 @@ let currentLanguaage;
 function changeLanguage(language) {
   loadTranslation(language);
   currentLanguaage = language;
-fetchReviews()
+// fetchReviews()
   languageOptions.forEach(option => {
-    if (option.textContent.trim() === language) {
-      console.log("languageOptions", language)
 
-      fetchReviews();
+    if (option.textContent.trim().toLowerCase() === language) {
+    
+
+      // fetchReviews();
       // option.classList.add('font-bold');
       option.classList.add('underline');
+      option.classList.add('text-[#168D71]');
     } else {
       // option.classList.remove('font-bold');
       option.classList.remove('underline');
+      option.classList.remove('text-[#168D71]');
     }
   });
 }
@@ -24,26 +27,26 @@ const apiKey = 'AIzaSyDo2OlY6CXwLC6OZCiaGdYlLRO9KFCunYk';
 const placeId = 'ChIJMxXAk0kXD0cR9hFDyIYkvxU'; // Ваш place_id
 const language = currentLanguaage; // Код языка для украинского
 console.log("currentLanguaage", currentLanguaage)
-async function fetchReviews() {
-  try {
-    // Формуємо URL запиту до Places Details API
-    const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?placeid=${placeId}&fields=reviews&language=${language}&key=${apiKey}`);
-    const data = await response.json();
-    console.log("response", response )
-    if (data.status === 'OK') {
-      const reviews = data.result.reviews; // Отримуємо масив відгуків
-      console.log('Відгуки про місце:', reviews);
-      return reviews;
-    } else {
-      console.error('Помилка при отриманні відгуків:', data.status);
-    }
-  } catch (error) {
-    console.error('Помилка при отриманні відгуків:', error);
-  }
-}
+// async function fetchReviews() {
+//   try {
+//     // Формуємо URL запиту до Places Details API
+//     const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?placeid=${placeId}&fields=reviews&language=${language}&key=${apiKey}`);
+//     const data = await response.json();
+//     console.log("response", response )
+//     if (data.status === 'OK') {
+//       const reviews = data.result.reviews; // Отримуємо масив відгуків
+//       console.log('Відгуки про місце:', reviews);
+//       return reviews;
+//     } else {
+//       console.error('Помилка при отриманні відгуків:', data.status);
+//     }
+//   } catch (error) {
+//     console.error('Помилка при отриманні відгуків:', error);
+//   }
+// }
 
-// Виклик функції для отримання відгуків
-fetchReviews();
+// // Виклик функції для отримання відгуків
+// fetchReviews();
 
 
 
