@@ -95,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // });
 
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('currentLanguaage', currentLanguaage)
   document.addEventListener('click', function(event) {
     if (event.target.classList.contains('read-more-btn')) {
       const btn = event.target;
@@ -102,10 +103,10 @@ document.addEventListener('DOMContentLoaded', function() {
       if (hiddenText) {
         if (hiddenText.style.maxHeight && hiddenText.style.maxHeight !== '0px') {
           hiddenText.style.maxHeight = '0px';
-          btn.textContent = 'Read more';
+          btn.textContent = currentLanguaage === 'en' ? 'Read more' : 'czytaj więcej';
         } else {
           hiddenText.style.maxHeight = hiddenText.scrollHeight + 'px';
-          btn.textContent = 'Hide';
+          btn.textContent = currentLanguaage === 'en' ?  'Hide' : 'Schowaj';
         }
       }
     }
