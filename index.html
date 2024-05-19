@@ -23,11 +23,12 @@
   <body style="font-family: 'STIX Two Text', serif" class="bg-[#FCF5DB]">
     <!-- px-32 -->
     <div class=" m-auto">
-      <div class="absolute inset-0 bg-center bg-cover" style="background-image: url('./assets/imgs/bg.svg'); z-index: -1;"></div>
+      <div class="absolute hidden lg:block inset-0 bg-center bg-cover" style="background-image: url('./assets/imgs/bg.svg'); z-index: -1;"></div>
+      <div class="absolute hidden md:block  lg:hidden inset-0 bg-center bg-cover" style="background-image: url('./assets/imgs/bgLaptop.svg'); z-index: -1;"></div>
       <div class="">
 
         <!-- navigation block -->
-        <nav class="m-auto max-w-[1440px] px-32 flex justify-between  pt-10">
+        <nav class="m-auto max-w-[1440px] md:px-8 px-32 flex justify-between  pt-10"  id="main">
           <img src="./assets/imgs/LOGO.svg" alt="" class="col-span-3" />
           <div class="gap-12">
             <a href="#aboutUs" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal" data-key="about"></a>
@@ -62,12 +63,12 @@
         </nav>
 
         <!-- proffesional block -->
-        <div class="max-w-[1440px] px-32 m-auto mt-10">
+        <div class="max-w-[1440px] md:px-8 px-32 m-auto md:mt-32 mt-10">
           <div class="grid grid-cols-12 gap-6">
             <div class="col-span-6 flex flex-col justify-center ">
               <h2
                 data-key="proffesionalTitle"
-                class="font-bold text-6xl leading-[72px]"
+                class="font-bold text-6xl md:text-5xl leading-[72px]"
               ></h2>
               <p
                 data-key="proffesionalSubtitle"
@@ -81,14 +82,14 @@
               </div>
             </div>
             <div class="col-span-6 flex justify-end" >
-              <img  src="./assets/imgs/picProffesional.svg"  class="h-[497px]"/>
+              <img  src="./assets/imgs/picProffesional.svg"  class="md:h-80 h-[497px]"/>
             </div>
           </div>
         </div>
       </div>
 
       <!-- unique offer block -->
-      <div class="mt-48 max-w-[1440px] px-32 m-auto">
+      <div class="mt-48 max-w-[1440px] md:px-8 px-32 m-auto">
         <div class="grid grid-cols-12 gap-6">
           <h3
             class="col-span-12 text-center text-4xl font-semibold"
@@ -141,7 +142,7 @@
       </div>
 
       <!-- our customers block -->
-      <div class="mt-40 max-w-[1440px] px-32 m-auto">
+      <div class="mt-40 max-w-[1440px] md:px-8 px-32 m-auto">
         <div class="grid grid-cols-12 gap-6">
           <h3
             class="col-span-12 text-center text-4xl font-normal color-[#17161C] font-bold"
@@ -187,24 +188,24 @@
 
     <!-- translator block -->
 <div class="mt-40 bg-[#168D7140] w-full pb-10" id="aboutUs">
-  <div class="max-w-[1440px] m-auto px-32">
+  <div class="max-w-[1440px] m-auto md:px-8 px-32">
     <div class="grid grid-cols-12 gap-6">
       <h3 class="col-span-12 text-center text-6xl font-bold color-[#17161C] font-bold mt-10" data-key="translatorTitle"></h3>
   </div>
   <div class="grid grid-cols-12 gap-6 mt-14 items-center">
-      <!-- <div class="col-span-5 bg-[#D9D9D9] h-[500px] mt-10 items-center"></div> -->
 
-      <div class="col-span-6">
+
+      <div class="col-span-6 md:col-span-7">
           <p class="font-normal text-base mt-5 flex items-center" data-key="translatorDescription"></p>
       </div>
-      <img src="./assets/imgs/computer.svg" class="h-[551px] pl-24 pb-8 items-center col-span-6 " alt="">
+      <img src="./assets/imgs/computer.svg" class="md:h-[324px] md:w-[324px] h-[551px] md:pl-12 pl-24 pb-8 items-center md:col-span-5 col-span-6 " alt="">
   </div>
   </div>
 
 </div>
 
       <!-- questions block-->
-      <div class="mt-40 m-auto max-w-[1440px] px-32">
+      <div class="mt-40 m-auto max-w-[1440px] md:px-8 px-32">
 
         <div class="grid grid-cols-12 gap-6" id="faq">
           <h3
@@ -217,199 +218,369 @@
 
 
 
-    <div class="grid grid-cols-12 gap-6 mt-12">
-      <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle1"></span>
-      <div class="col-span-8 text-container">
-        <p class="text-base" data-key="questionDescription1"></p>
-        <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden1"></p>
+    <!-- desktop -->
+    <div class="hidden lg:block">
+
+
+      <div class="grid grid-cols-12 gap-6 mt-12">
+        <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle1"></span>
+        <div class="col-span-8 text-container">
+          <p class="text-base" data-key="questionDescription1"></p>
+          <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden1"></p>
+        </div>
       </div>
+
+      <div class="grid grid-cols-12 gap-6 mt-6">
+        <div class="col-start-5 col-span-8 flex justify-end">
+          <button id="questionDescriptionHidden1" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button>
+        </div>
+  </div>
+
+      <div class="grid grid-cols-12 gap-6 mt-12">
+        <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle2"></span>
+        <div class="col-span-8 text-container">
+          <p class="text-base" data-key="questionDescription2"></p>
+          <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden2"></p>
+        </div>
+      </div>
+  
+      <div class="grid grid-cols-12 gap-6 mt-6">
+            <div class="col-start-5 col-span-8 flex justify-end">
+              <!-- <button id="questionDescriptionHidden2" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button> -->
+            </div>
+      </div>
+
+      <div class="grid grid-cols-12 gap-6 mt-12">
+        <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle3"></span>
+        <div class="col-span-8 text-container">
+          <p class="text-base" data-key="questionDescription3"></p>
+          <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden3"></p>
+        </div>
+      </div>
+  
+      <div class="grid grid-cols-12 gap-6 mt-6">
+            <div class="col-start-5 col-span-8 flex justify-end">
+              <!-- <button id="questionDescriptionHidden3" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button> -->
+            </div>
+      </div>
+
+
+      <div class="grid grid-cols-12 gap-6 mt-12">
+        <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle4"></span>
+        <div class="col-span-8 text-container">
+          <p class="text-base" data-key="questionDescription4"></p>
+          <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden4"></p>
+        </div>
+      </div>
+  
+      <div class="grid grid-cols-12 gap-6 mt-6">
+            <div class="col-start-5 col-span-8 flex justify-end">
+              <!-- <button id="questionDescriptionHidden4" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button> -->
+            </div>
+      </div>
+
+
+      <div class="grid grid-cols-12 gap-6 mt-12">
+        <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle5"></span>
+        <div class="col-span-8 text-container">
+          <p class="text-base" data-key="questionDescription5"></p>
+          <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden5"></p>
+        </div>
+      </div>
+  
+      <div class="grid grid-cols-12 gap-6 mt-6">
+            <div class="col-start-5 col-span-8 flex justify-end">
+              <button id="questionDescriptionHidden5" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button>
+            </div>
+      </div>
+
+
+      <div class="grid grid-cols-12 gap-6 mt-12">
+        <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle6"></span>
+        <div class="col-span-8 text-container">
+          <p class="text-base" data-key="questionDescription6"></p>
+          <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden6"></p>
+        </div>
+      </div>
+  
+      <div class="grid grid-cols-12 gap-6 mt-6">
+            <div class="col-start-5 col-span-8 flex justify-end">
+              <button id="questionDescriptionHidden6" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button>
+            </div>
+      </div>
+  
+
     </div>
 
-        <div class="grid grid-cols-12 gap-6 mt-6">
-          <div class="col-start-5 col-span-8 flex justify-end">
-            <button id="questionDescriptionHidden1" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button>
-          </div>
+    <!-- tablet -->
+    <div class="block lg:hidden">
+
+      <!-- 1-block -->
+      <div class="grid grid-cols-12 gap-6 mt-12">
+        <div class="flex justify-between col-span-12">
+          <span class="text-2xl font-bold text-[#17161C]" data-key="questiontitle1"></span>
+          <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText1">
+            <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
+          </button>
         </div>
-
-
-        <!-- <div class="grid grid-cols-12 gap-6 mt-12">
-          <span
-            class="col-span-4 text-2xl font-bold color-[#17161C]"
-            data-key="questiontitle2"
-          ></span>
-          <div class="col-span-8">
-            <p class="text-base" data-key="questionDescription2"></p>
-            <p class="hidden" data-key="questionDescriptionHidden2"></p>
-          </div>
-        </div> -->
-<!-- 
-        <div class="grid grid-cols-12 gap-6 mt-6">
-          <div class="col-start-5 col-span-8 flex justify-end">
-            <button id="questionDescriptionHidden2" class="read-more-btn text-base text-[#168D71] border-2 border-[#168D71] py-1.5 px-2 mt-6 rounded-full">Read more</button>
-          </div>
-        </div> -->
-
+        <div class="col-span-12 text-container">
+          <p id="hiddenText1" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out" data-key="questionDescriptionMobile1">
+          </p>
+        </div>
+      </div>
+      <!-- 2-block -->
+      <div class="grid grid-cols-12 gap-6 mt-12">
+        <div class="flex justify-between col-span-12">
+          <span class="text-2xl font-bold text-[#17161C]" data-key="questiontitle2">Заголовок 2</span>
+          <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText2">
+            <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
+          </button>
+        </div>
+        <div class="col-span-12 text-container">
+          <p id="hiddenText2" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out" data-key="questionDescriptionMobile2">
+          </p>
+        </div>
+      </div>
+     <!-- 3-block -->
+     <div class="grid grid-cols-12 gap-6 mt-12">
+      <div class="flex justify-between col-span-12">
+        <span class="text-2xl font-bold text-[#17161C]" data-key="questiontitle3"></span>
+        <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText3">
+          <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
+        </button>
+      </div>
+      <div class="col-span-12 text-container">
+        <p id="hiddenText3" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out" data-key="questionDescriptionMobile3">
+        </p>
+      </div>
+    </div>
+     <!-- 4-block -->
+     <div class="grid grid-cols-12 gap-6 mt-12">
+      <div class="flex justify-between col-span-12">
+        <span class="text-2xl font-bold text-[#17161C]" data-key="questiontitle4"></span>
+        <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText4">
+          <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
+        </button>
+      </div>
+      <div class="col-span-12 text-container">
+        <p id="hiddenText4" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out" data-key="questionDescriptionMobile4">
+        </p>
+      </div>
+    </div>
+        <!-- 5-block -->
         <div class="grid grid-cols-12 gap-6 mt-12">
-          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle2"></span>
-          <div class="col-span-8 text-container">
-            <p class="text-base" data-key="questionDescription2"></p>
-            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden2"></p>
+          <div class="flex justify-between col-span-12">
+            <span class="text-2xl font-bold text-[#17161C]" data-key="questiontitle5"></span>
+            <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText5">
+              <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
+            </button>
+          </div>
+          <div class="col-span-12 text-container">
+            <p id="hiddenText5" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out" data-key="questionDescriptionMobile5">
+            </p>
           </div>
         </div>
-    
-        <div class="grid grid-cols-12 gap-6 mt-6">
-              <div class="col-start-5 col-span-8 flex justify-end">
-                <!-- <button id="questionDescriptionHidden2" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button> -->
+             <!-- 6-block -->
+             <div class="grid grid-cols-12 gap-6 mt-12">
+              <div class="flex justify-between col-span-12">
+                <span class="text-2xl font-bold text-[#17161C]" data-key="questiontitle6"></span>
+                <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText6">
+                  <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
+                </button>
               </div>
-        </div>
-
-        <div class="grid grid-cols-12 gap-6 mt-12">
-          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle3"></span>
-          <div class="col-span-8 text-container">
-            <p class="text-base" data-key="questionDescription3"></p>
-            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden3"></p>
-          </div>
-        </div>
-    
-        <div class="grid grid-cols-12 gap-6 mt-6">
-              <div class="col-start-5 col-span-8 flex justify-end">
-                <!-- <button id="questionDescriptionHidden3" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button> -->
+              <div class="col-span-12 text-container">
+                <p id="hiddenText6" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out" data-key="questionDescriptionMobile6">
+                </p>
               </div>
-        </div>
+            </div>
 
-
-        <div class="grid grid-cols-12 gap-6 mt-12">
-          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle4"></span>
-          <div class="col-span-8 text-container">
-            <p class="text-base" data-key="questionDescription4"></p>
-            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden4"></p>
-          </div>
-        </div>
+    </div>
     
-        <div class="grid grid-cols-12 gap-6 mt-6">
-              <div class="col-start-5 col-span-8 flex justify-end">
-                <!-- <button id="questionDescriptionHidden4" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button> -->
-              </div>
-        </div>
-
-
-        <div class="grid grid-cols-12 gap-6 mt-12">
-          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle5"></span>
-          <div class="col-span-8 text-container">
-            <p class="text-base" data-key="questionDescription5"></p>
-            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden5"></p>
-          </div>
-        </div>
-    
-        <div class="grid grid-cols-12 gap-6 mt-6">
-              <div class="col-start-5 col-span-8 flex justify-end">
-                <button id="questionDescriptionHidden5" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button>
-              </div>
-        </div>
-
-
-        <div class="grid grid-cols-12 gap-6 mt-12">
-          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle6"></span>
-          <div class="col-span-8 text-container">
-            <p class="text-base" data-key="questionDescription6"></p>
-            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden6"></p>
-          </div>
-        </div>
-    
-        <div class="grid grid-cols-12 gap-6 mt-6">
-              <div class="col-start-5 col-span-8 flex justify-end">
-                <button id="questionDescriptionHidden6" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button>
-              </div>
-        </div>
-    
-
   
       </div>
 
       <!-- product block -->
       <div class="bg-[#168D7133] pb-10" id="priceList">
-        <div class=" m-auto max-w-[1440px] mt-40  before:w-full px-32">
+        <div class=" m-auto max-w-[1440px] mt-40  before:w-full md:px-8 px-32">
+
           <div class="grid grid-cols-12 gap-6">
             <h3
               class="col-span-12 text-center text-6xl font-bold	 color-[#17161C] font-bold mt-10"
               data-key="productTitle"
             ></h3>
           </div>
-          <div class="grid grid-cols-12 gap-6 mt-10">
+          <!-- desktop -->
+          <div class="hidden lg:block">
+            <div class="grid grid-cols-12 gap-6 mt-10 ">
             
-            <div class="col-span-4  bg-[#FCF5DB] flex flex-col items-center mt-10 ">
-              <img  src="./assets/icons/price1.svg"  class="mt-16"/>
-       
-               <span class="mt-20 text-center">
-                  <p data-key="productTitle1Block1"></p>
-                  <p data-key="productTitle2Block1"></p>
-                </span>
-                <span  data-key="productPriceBlock1" class="mt-10 text-center"></span>
-                <span data-key="productPriceExpressBlock1"></span>
-
-                <button type="button" class="w-3/6  py-2.5  mt-10 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0" data-key="productBtn"></button>
-                <div class="mt-10"></div>
-       
-            </div>
-
-            <div class="col-span-4  bg-[#FCF5DB] flex flex-col items-center mt-10 ">
-              <img  src="./assets/icons/price2.svg"  class="mt-16"/>
-              
-              <span class="mt-20 text-center">
-                <p data-key="productTitle1Block2"></p>
-                <p data-key="productTitle2Block2"></p>
-              </span>
-              <span  data-key="productPriceBlock2" class="mt-10 text-center"></span>
-              <span data-key="productPriceExpressBlock2"></span>
-
-              <button type="button" class="w-3/6  py-2.5  mt-10 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0" data-key="productBtn"></button>
-              <div class="mt-10"></div>
-       
-            </div>
-
-            <div class="col-span-4  bg-[#FCF5DB] flex flex-col items-center mt-10 ">
-              <img  src="./assets/icons/price3.svg"  class="mt-16"/>
-              
-              <span class="mt-20 text-center">
-                <p data-key="productTitle1Block3"></p>
-                <p data-key="productTitle2Block3"></p>
-              </span>
-              <span  data-key="productPriceBlock3" class="mt-[80px] text-center"></span>
-              <div data-key="productPriceExpressBlock3"></div>
-
-              <button type="button" class="w-3/6  py-2.5  mt-10 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0 mt-[50px]" data-key="productBtn">Замовити</button>
-              <div class="mt-10"></div>
-       
-            </div>
-
+              <div class="col-span-4  bg-[#FCF5DB] flex flex-col items-center mt-10 ">
+                <img  src="./assets/icons/price1.svg"  class="mt-16"/>
          
+                 <span class="mt-20 text-center">
+                    <p data-key="productTitle1Block1"></p>
+                    <p data-key="productTitle2Block1"></p>
+                  </span>
+                  <span  data-key="productPriceBlock1" class="mt-10 text-center"></span>
+                  <span data-key="productPriceExpressBlock1"></span>
+  
+                  <button type="button" class="w-3/6 shadow-lg py-2.5  mt-10 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0" data-key="productBtn"></button>
+                  <div class="mt-10"></div>
+         
+              </div>
+  
+              <div class="col-span-4  bg-[#FCF5DB] flex flex-col items-center mt-10 ">
+                <img  src="./assets/icons/price2.svg"  class="mt-16"/>
+                
+                <span class="mt-20 text-center">
+                  <p data-key="productTitle1Block2"></p>
+                  <p data-key="productTitle2Block2"></p>
+                </span>
+                <span  data-key="productPriceBlock2" class="mt-10 text-center"></span>
+                <span data-key="productPriceExpressBlock2"></span>
+  
+                <button type="button" class="w-3/6 shadow-lg py-2.5  mt-10 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0" data-key="productBtn"></button>
+                <div class="mt-10"></div>
+         
+              </div>
+  
+              <div class="col-span-4  bg-[#FCF5DB] flex flex-col items-center mt-10 ">
+                <img  src="./assets/icons/price3.svg"  class="mt-16"/>
+                
+                <span class="mt-20 text-center">
+                  <p data-key="productTitle1Block3"></p>
+                  <p data-key="productTitle2Block3"></p>
+                </span>
+                <span  data-key="productPriceBlock3" class="mt-[80px] text-center"></span>
+                <div data-key="productPriceExpressBlock3"></div>
+  
+                <button type="button" class="w-3/6 shadow-lg py-2.5  mt-10 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0 mt-[50px]" data-key="productBtn">Замовити</button>
+                <div class="mt-10"></div>
+         
+              </div>
+  
+           
+            </div>
           </div>
+        
+
+             <!-- mobile -->
+          
+             <div class="grid grid-cols-12 gap-12 mt-10 block lg:hidden">
+            
+              <div class="col-span-6  bg-[#fff]">
+                <div class="flex justify-between px-4 gap-4 mt-4 mb-4">
+
+                  <img  src="./assets/icons/price1.svg"  class=" min-w-[129px] min-h-[163px]"/>
+         
+                  <div class="flex flex-col">
+                    <span class=" text-sm text-center">
+                      <p data-key="productTitle1Block1" class="text-sm"></p>
+                      <p data-key="productTitle2Block1" class="text-sm"></p>
+                    </span>
+                    <span  data-key="productPriceBlock1" class="mt-4 text-center text-sm"></span>
+    
+                    <button type="button" class="w-full shadow-lg mt-10 px-2 py-1 me-2 mb-2 text-sm font-medium text-[#FCF5DB] focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0" data-key="productBtn"></button>
+                
+                  </div>
+                </div>
+               
+                
+         
+              </div>
+
+              <div class="col-span-6  bg-[#fff]">
+                <div class="flex justify-between px-4 gap-4 mt-4 mb-4">
+
+                  <img  src="./assets/icons/price2.svg"  class=" min-w-[129px] min-h-[163px]"/>
+         
+                  <div class="flex flex-col">
+                    <span class=" text-sm text-center">
+                      <p data-key="productTitle1Block2" class="text-sm"></p>
+                      <p data-key="productTitle2Block2" class="text-sm"></p>
+                    </span>
+                    <span  data-key="productPriceBlock2" class="mt-4 text-center text-sm"></span>
+    
+                    <button type="button" class="w-full shadow-lg mt-10 px-2 py-1 me-2 mb-2 text-sm font-medium text-[#FCF5DB] focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0" data-key="productBtn"></button>
+                
+                  </div>
+                </div>
+              </div>
+<!--   
+              <div class="col-span-6  bg-[#FCF5DB] flex flex-col items-center mt-10 ">
+                <img  src="./assets/icons/price2.svg"  class="mt-16"/>
+                
+                <span class="mt-20 text-center">
+                  <p data-key="productTitle1Block2"></p>
+                  <p data-key="productTitle2Block2"></p>
+                </span>
+                <span  data-key="productPriceBlock2" class="mt-10 text-center"></span>
+                <span data-key="productPriceExpressBlock2"></span>
+  
+                <button type="button" class="w-3/6 shadow-lg py-2.5  mt-10 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0" data-key="productBtn"></button>
+                <div class="mt-10"></div>
+         
+              </div> -->
+  
+         
+  
+           
+            </div>
+            
+            <div class="flex justify-center  mt-10 block lg:hidden">
+              <div class="col-span-6  bg-[#fff] ">
+                <div class="flex justify-between px-4 gap-4 mt-4 mb-4">
+
+                  <img  src="./assets/icons/price3.svg"  class=" min-w-[129px] min-h-[137px]"/>
+         
+                  <div class="flex flex-col">
+                    <span class=" text-sm text-center">
+                      <p data-key="productTitle1Block1" class="text-sm"></p>
+                      <p data-key="productTitle2Block1" class="text-sm"></p>
+                    </span>
+                    <span  data-key="productPriceBlock1" class="mt-4 text-center text-sm"></span>
+    
+                    <button type="button" class="w-full shadow-lg mt-10 px-2 py-1 me-2 mb-2 text-sm font-medium text-[#FCF5DB] focus:outline-none  rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]  focus:border-0" data-key="productBtn"></button>
+                
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          
       </div>
       </div>
 
-       <!-- product block -->
+       <!-- opinions block -->
       <div class="bg-[#168D7133] pb-40" id="opinions">
-              <div class=" m-auto max-w-[1440px]   before:w-full px-32">
+              <div class=" m-auto max-w-[1440px]   before:w-full md:px-8 px-32">
                 <div class="grid grid-cols-12 gap-6">
                   <h3
                     class="col-span-12 text-center text-6xl font-bold	 color-[#17161C] font-bold mt-10"
-                    data-key=""
-                  >Opinions</h3>
+                    data-key="opinions"
+                  ></h3>
                 </div>
+
+                
                 <div class="grid grid-cols-12 gap-6 mt-10">
                   
-                  <div class="col-span-4  mt-10 ">
+                  <div class="lg:col-span-4 md:col-span-6   mt-10 ">
                     <img  src="./assets/imgs/opinie1.svg"  />
                   </div>
 
-                  <div class="col-span-4  mt-10 ">
+                  <div class="lg:col-span-4 md:col-span-6 mt-10 ">
                     <img  src="./assets/imgs/opinie2.svg"  />
                   </div>
 
-                  <div class="col-span-4  mt-10 ">
+                  <div class="lg:col-span-4  mt-10 md:hidden lg:block">
                     <img  src="./assets/imgs/opinie3.svg"  />
                   </div>               
                 </div>
+
+                
+<div class="mt-10 md:block md:flex justify-center lg:hidden">
+  <img src="./assets/imgs/opinie3.svg" />
+</div>
+
                 <div class="col-span-12 flex justify-end mt-6 px-12">
                   <a href="https://maps.app.goo.gl/ohboBMfLMXJv8JoY8" target="_blank"><button  class="text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full">Read more</button></a>
                 </div>
@@ -419,9 +590,9 @@
       
       <!-- contact us block -->
       <div class="bg-[#062B22] w-full">
-        <div class="m-auto max-w-[1440px] px-32 pb-12">
+        <div class="m-auto max-w-[1440px] md:px-8 px-32 pb-12">
           <div class="grid grid-cols-12 gap-6">
-            <img  src="./assets/imgs/logo_footer.svg" class="col-span-12 mt-10"  />
+            <a href="#main" class="col-span-12 mt-10" ><img  src="./assets/imgs/logo_footer.svg" class="col-span-12 mt-10"  /></a>
           </div>
           <div class="grid grid-cols-12 gap-6 mt-10">
             
@@ -451,7 +622,7 @@
               </form>
           </div>
           
-          <div class=" col-start-9 col-end-12 mt-10 text-[#FCF5DB] ">
+          <div class=" col-start-9 md:col-start-8 col-end-12 mt-10 text-[#FCF5DB] ">
             <h3 data-key="contactUsTitleSecond"></h3>
             <div class="flex gap-6 mt-10 text-sm font-light text-[#FCF5DB]">
               <div data-key="contactUsTitlePhone2" class="min-w-[80px]"></div>
@@ -461,9 +632,9 @@
               <div data-key="contactUsTitleMail2" class="min-w-[80px]"></div>
               <div data-key="contactUsMail2"> </div>
             </div>
-            <div class="flex gap-6 mt-5 text-sm font-light text-[#FCF5DB]">
+            <div class="flex gap-4 mt-5 text-sm font-light text-[#FCF5DB]">
               <div data-key="contactUsTitleAdress" class="min-w-[80px]"></div>
-              <div data-key="contactUsAdress"></div>
+              <div data-key="contactUsAdress" class="whitespace-nowrap"></div>
             </div>
             <h3 class="mt-10 text-[#FCF5DB]" data-key="contactUsTitleSocial"></h3>
             <div class="mt-5 flex gap-6">

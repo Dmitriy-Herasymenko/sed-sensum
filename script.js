@@ -113,6 +113,29 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleButtons = document.querySelectorAll('.toggleButton');
+
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const targetId = button.getAttribute('data-target');
+      const hiddenText = document.getElementById(targetId);
+      const toggleIcon = button.querySelector('.toggleIcon');
+
+      if (hiddenText.style.maxHeight && hiddenText.style.maxHeight !== '0px') {
+        hiddenText.style.maxHeight = '0px';
+        toggleIcon.classList.remove('rotate-180');
+      } else {
+        hiddenText.style.maxHeight = hiddenText.scrollHeight + 'px';
+        toggleIcon.classList.add('rotate-180');
+      }
+    });
+  });
+});
+
+
+
+
 
 
 
