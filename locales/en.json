@@ -5,7 +5,7 @@
   "opinions": "Opinions",
   "contacts": "Contacts",
   "faq": "FAQ",
-  
+
   "proffesionalTitle": "Quickly, cheaply, professionally",
   "proffesionalSubtitle": "Professional translation services for businesses and individual clients",
   "proffesionalBtn": "Order a translation",
@@ -87,6 +87,8 @@
   "questionDescription6": "First, the text is analyzed to determine the costs and time required for the translation work. Then, a translator or a team of translators is selected to work on the text. The translator(s) first familiarize themselves with the document, possibly deepening their knowledge in the specific field, before starting the translation process. They use specialized dictionaries, glossaries, or similar projects completed in the past.",
   "questionDescriptionHidden6": "A draft translation is created, which undergoes necessary editing and revisions. The text is thoroughly reviewed first by the team (syntax, punctuation, spelling, content), and then by specialists in the relevant field, who verify the scientific terminology used. Finally, a final check is conducted, which may include verifying the document's layout, format, and compliance with the client's specific guidelines. After this, the translated text is delivered to the client...",
   "questionDescriptionMobile6": "First, the text is analyzed to determine the costs and time required for the translation work. Then, a translator or a team of translators is selected to work on the text. The translator(s) first familiarize themselves with the document, possibly deepening their knowledge in the specific field, before starting the translation process. They use specialized dictionaries, glossaries, or similar projects completed in the past. A draft translation is created, which undergoes necessary editing and revisions. The text is thoroughly reviewed first by the team (syntax, punctuation, spelling, content), and then by specialists in the relevant field, who verify the scientific terminology used. Finally, a final check is conducted, which may include verifying the document's layout, format, and compliance with the client's specific guidelines. After this, the translated text is delivered to the client...",
+
+  "opinionBtn": "read more",
 
   "contactUsTitle": "Text us",
   "contactUsName": "First name, last name",
