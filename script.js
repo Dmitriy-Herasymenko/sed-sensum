@@ -133,6 +133,10 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+document.getElementById('burgerButton').addEventListener('click', function() {
+  var menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('hidden');
+});
 
 
 
