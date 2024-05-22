@@ -133,10 +133,19 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-document.getElementById('burgerButton').addEventListener('click', function() {
-  var menu = document.getElementById('mobileMenu');
-  menu.classList.toggle('hidden');
-});
+
+const mobileMenu = document.getElementById('mobileMenu');
+  const burgerButton = document.getElementById('burgerButton');
+  const [line1, line2, line3] = burgerButton.children;
+
+  burgerButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    line1.classList.toggle('rotate-45');
+    line1.classList.toggle('translate-y-2.5');
+    line2.classList.toggle('opacity-0');
+    line3.classList.toggle('-rotate-45');
+    line3.classList.toggle('-translate-y-2.5');
+  });
 
 
 

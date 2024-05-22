@@ -64,29 +64,59 @@
             </div>
           </nav>
         </div>
-     
-          <!-- Mobile Menu Burger-->
-  <div id="mobileMenu" class="hidden bg-[#062B22] w-full h-full absolute z-50 md:hidden">
-    <a href="#aboutUs" class="block text-white py-2 px-4 hover:bg-gray-700">About Us</a>
-    <a href="#opinions" class="block text-white py-2 px-4 hover:bg-gray-700">Opinions</a>
-    <a href="#contactUs" class="block text-white py-2 px-4 hover:bg-gray-700">Contact Us</a>
-  </div>
-         <!-- Navbar burger-->
-  <nav class="block md:hidden p-4">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <a href="#" class="text-white text-3xl font-bold">           <img src="./assets/imgs/LOGO.svg" alt="" class="w-[100px] h-[50px]" /></a>
-      <div class="hidden md:flex space-x-4">
-        <a href="#aboutUs" class="text-white hover:text-gray-300">About Us</a>
-        <a href="#opinions" class="text-white hover:text-gray-300">Opinions</a>
-        <a href="#contactUs" class="text-white hover:text-gray-300">Contact Us</a>
+
+        <!-- Mobile Menu Burger-->
+<div id="mobileMenu" class="fixed inset-0 bg-[#96FFE6] z-50 hidden">
+  <a href="#" class="text-white text-3xl font-bold p-8 ">
+    <img src="./assets/icons/logoHamburger.svg" class='w-[104px] h-[20px] ml-6'  />
+    <div class="w-full h-[1px] mt-4  bg-[#1A856C]"></div>
+  </a>
+  <div class="flex flex-col  h-full  ">
+    <a href="#aboutUs" class="block text-[#062B22] text-base py-4 px-6 hover:bg-gray-700">About Us</a>
+    <a href="#opinions" class="block text-[#062B22] text-base py-4 px-6 hover:bg-gray-700">Opinions</a>
+    <a href="#contactUs" class="block text-[#062B22] text-base  py-4 px-6 hover:bg-gray-700">Contact Us</a>
+    <div class="w-full h-[1px] mt-4  bg-[#1A856C]"></div>
+    <div class="flex mt-4 py-4 px-6">
+      <div
+        onclick="changeLanguage('en')"
+        class="language-option cursor-pointer  underline-offset-4 text-base hover:text-[#168D71] focus:text-[#168D71]"
+      >
+        En
       </div>
-      <button id="burgerButton" class="md:hidden text-[#062B22] focus:outline-none">
-        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
+      <div class="px-2 font-light">|</div>
+      <div
+        onclick="changeLanguage('pl')"
+        class="language-option cursor-pointer  underline-offset-4 text-base hover:text-[#168D71] focus:text-[#168D71]"
+      >
+        Pl
+      </div>
     </div>
-  </nav>
+  
+  </div>
+ 
+</div>
+
+<!-- Navbar burger -->
+<nav class="block md:hidden p-4 ">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <a href="#" class="text-white text-3xl font-bold">
+      <img src="./assets/imgs/LOGO.svg" alt="" class="w-[100px] h-[50px]" />
+    </a>
+    <div class="hidden md:flex space-x-4">
+      <a href="#aboutUs" class="text-[#062B22] text-base font-normal">About Us</a>
+      <a href="#opinions" class="text-[#062B22] text-base font-normal">Opinions</a>
+      <a href="#contactUs" class="text-[#062B22] text-base font-normal">Contact Us</a>
+    </div>
+    <button id="burgerButton" class="md:hidden text-white focus:outline-none relative z-50 flex flex-col space-y-1.5">
+      <div class="w-8 h-[2px] bg-[#062B22] transition-transform duration-300 ease-in-out"></div>
+      <div class="w-8 h-[2px]  bg-[#062B22] transition-opacity duration-300 ease-in-out"></div>
+      <div class="w-8 h-[2px]  bg-[#062B22] transition-transform duration-300 ease-in-out"></div>
+    </button>
+    
+  </div>
+</nav>
+
+
 
 
 
@@ -120,59 +150,60 @@
       <div class="mt-48 max-w-[1440px] md:px-8 lg:px-32 m-auto">
         <div class="grid grid-cols-12 gap-6">
           <h3
-            class="col-span-12 text-center text-4xl font-semibold"
+            class="col-span-12 text-center text-base font-normal md:text-4xl lg:text-4xl md:font-semibold lg:font-semibold"
             data-key="uniqueOfferTitle"
           ></h3>
-          <p class="col-span-12 text-center text-3xl" data-key="uniqueOfferSubtitle"></p>
+          <p class="col-span-12 text-center text-base md:text-3xl lg:text-3xl" data-key="uniqueOfferSubtitle"></p>
         </div>
         <div class="grid grid-cols-12 gap-6 mt-24">
           <div class="flex flex-col col-span-3">
             <h2
-              class="color-[#17161C] text-3xl lg:text-6xl  font-bold text-center"
+              class="color-[#17161C] text-xl md:text-3xl lg:text-6xl  font-bold text-center"
               data-key="uniqueOfferNumber1"
             ></h2>
             <p
-              class="color-[#17161C] font-normal text-base text-center mt-5"
+              class="color-[#17161C] font-normal text-xs md:text-base lg:text-base text-center mt-2 md:mt-5 lg:mt-5"
               data-key="uniqueOfferDescriptionNumber1"
             ></p>
           </div>
           <div class="flex flex-col col-span-3">
             <h2
-              class="color-[#17161C] text-3xl lg:text-6xl font-bold text-center"
+              class="color-[#17161C] text-xl md:text-3xl font-bold text-center"
               data-key="uniqueOfferNumber2"
             ></h2>
             <p
-              class="color-[#17161C] font-normal text-base text-center mt-5"
+              class="color-[#17161C] font-normal text-xs md:text-base lg:text-base text-center mt-2 md:mt-5 lg:mt-5"
               data-key="uniqueOfferDescriptionNumber2"
             ></p>
           </div>
           <div class="flex flex-col col-span-3">
             <h2
-              class="color-[#17161C] text-3xl lg:text-6xl font-bold text-center"
+              class="color-[#17161C] text-xl md:text-3xl font-bold text-center"
               data-key="uniqueOfferNumber3"
             ></h2>
             <p
-              class="color-[#17161C] font-normal text-base text-center mt-5"
+              class="color-[#17161C] font-normal text-xs md:text-base lg:text-base text-center mt-2 md:mt-5 lg:mt-5"
               data-key="uniqueOfferDescriptionNumber3"
             ></p>
           </div>
           <div class="flex flex-col col-span-3">
             <h2
-              class="color-[#17161C] text-3xl lg:text-6xl font-bold text-center"
+              class="color-[#17161C] text-xl md:text-3xl font-bold text-center"
               data-key="uniqueOfferNumber4"
             ></h2>
             <p
-              class="color-[#17161C] font-normal text-base text-center mt-5"
+              class="color-[#17161C] font-normal text-xs md:text-base lg:text-base text-center mt-2 md:mt-5 lg:mt-5"
               data-key="uniqueOfferDescriptionNumber4"
             ></p>
           </div>
         </div>
       </div>
+
 <!-- our customers block -->
 <div class="mt-40 max-w-[1440px] px-4 md:px-8 lg:px-32 m-auto">
   <div class="grid grid-cols-12 gap-6">
     <h3
-      class="col-span-12 text-center text-4xl font-normal color-[#17161C] font-bold"
+      class="col-span-12 text-center text-2xl md:text-4xl lg:text-4xl font-normal color-[#17161C] font-bold"
       data-key="ourCustomersTitle"
     ></h3>
   </div>
@@ -182,28 +213,28 @@
       <div class="flex gap-6 mt-10 md:mt-0">
         <img src="./assets/icons/customerIcon.svg" class="h-10" />
         <div class="max-w-[508px]">
-          <h3 class="font-bold text-2xl" data-key="ourCustomerTitleBlock1"></h3>
+          <h3 class="font-bold text-base md:text-2xl lg:text-2xl" data-key="ourCustomerTitleBlock1"></h3>
           <p class="font-normal font-base mt-3.5" data-key="ourCustomerSubtitleBlock1"></p>
         </div>
       </div>
       <div class="flex gap-6 mt-10 md:mt-20">
         <img src="./assets/icons/customerIcon.svg" class="h-10" />
         <div class="max-w-[508px]">
-          <h3 class="font-bold text-2xl" data-key="ourCustomerTitleBlock2"></h3>
+          <h3 class="font-bold text-base md:text-2xl lg:text-2xl" data-key="ourCustomerTitleBlock2"></h3>
           <p class="font-normal font-base mt-3.5" data-key="ourCustomerSubtitleBlock2"></p>
         </div>
       </div>
       <div class="flex gap-6 mt-10 md:mt-20">
         <img src="./assets/icons/customerIcon.svg" class="h-10" />
         <div class="max-w-[508px]">
-          <h3 class="font-bold text-2xl" data-key="ourCustomerTitleBlock3"></h3>
+          <h3 class="font-bold ttext-base md:text-2xl lg:text-2xl" data-key="ourCustomerTitleBlock3"></h3>
           <p class="font-normal font-base mt-3.5" data-key="ourCustomerSubtitleBlock3"></p>
         </div>
       </div>
       <div class="flex gap-6 mt-10 md:mt-20">
         <img src="./assets/icons/customerIcon.svg" class="h-10" />
         <div class="max-w-[508px]">
-          <h3 class="font-bold text-2xl" data-key="ourCustomerTitleBlock4"></h3>
+          <h3 class="font-bold text-base md:text-2xl lg:text-2xl" data-key="ourCustomerTitleBlock4"></h3>
           <p class="font-normal font-base mt-3.5" data-key="ourCustomerSubtitleBlock4"></p>
         </div>
       </div>
@@ -216,14 +247,14 @@
 <div class="mt-40 bg-[#168D7140] w-full pb-10" id="aboutUs">
   <div class="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-32">
     <div class="grid grid-cols-12 gap-6">
-      <h3 class="col-span-12 text-center text-6xl font-bold text-[#17161C] mt-10" data-key="translatorTitle"></h3>
+      <h3 class="col-span-12 text-center text-2xl md:text-6xl lg:text-6xl font-bold text-[#17161C] mt-10" data-key="translatorTitle"></h3>
     </div>
     <div class="grid grid-cols-12 gap-6 mt-14 items-center">
       <div class="col-span-12 md:col-span-7">
-        <p class="font-normal text-base mt-5 flex items-center" data-key="translatorDescription"></p>
+        <p class="font-normal text-xs	 md:text-base lg:text-base mt-5 flex items-center" data-key="translatorDescription"></p>
       </div>
       <div class="col-span-12 md:col-span-5 flex justify-center">
-        <img src="./assets/imgs/computer.svg" class="w-full md:w-[324px] h-auto" alt="">
+        <img src="./assets/imgs/computer.svg" class="w-[220px] md:w-[324px] h-auto" alt="">
       </div>
     </div>
   </div>
@@ -235,7 +266,7 @@
 
         <div class="grid grid-cols-12 gap-6" id="faq">
           <h3
-            class="col-span-12 text-center text-6xl font-bold	 color-[#17161C] font-bold mt-10"
+            class="col-span-12 text-center text-2xl md:text-6xl lg:text-6xl font-bold	 color-[#17161C] font-bold mt-10"
             data-key="questionsTitle"
           ></h3>
         </div>
@@ -249,7 +280,7 @@
 
 
       <div class="grid grid-cols-12 gap-6 mt-12">
-        <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle1"></span>
+        <span class="col-span-4 text-base md:text-2xl lg:text-2xl font-bold color-[#17161C]" data-key="questiontitle1"></span>
         <div class="col-span-8 text-container">
           <p class="text-base" data-key="questionDescription1"></p>
           <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden1"></p>
@@ -344,7 +375,7 @@
       <!-- 1-block -->
       <div class="grid grid-cols-12 gap-6 mt-12">
         <div class="flex justify-between col-span-12">
-          <span class="text-2xl font-bold text-[#17161C]" data-key="questiontitle1"></span>
+          <span class="text-base font-bold text-[#17161C]" data-key="questiontitle1"></span>
           <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText1">
             <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
           </button>
@@ -357,7 +388,7 @@
       <!-- 2-block -->
       <div class="grid grid-cols-12 gap-6 mt-12">
         <div class="flex justify-between col-span-12">
-          <span class="text-2xl font-bold text-[#17161C]" data-key="questiontitle2">Заголовок 2</span>
+          <span class="text-base font-bold text-[#17161C]" data-key="questiontitle2">Заголовок 2</span>
           <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText2">
             <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
           </button>
@@ -370,7 +401,7 @@
      <!-- 3-block -->
      <div class="grid grid-cols-12 gap-6 mt-12">
       <div class="flex justify-between col-span-12">
-        <span class="text-2xl font-bold text-[#17161C]" data-key="questiontitle3"></span>
+        <span class="text-base font-bold text-[#17161C]" data-key="questiontitle3"></span>
         <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText3">
           <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
         </button>
@@ -383,7 +414,7 @@
      <!-- 4-block -->
      <div class="grid grid-cols-12 gap-6 mt-12">
       <div class="flex justify-between col-span-12">
-        <span class="text-2xl font-bold text-[#17161C]" data-key="questiontitle4"></span>
+        <span class="text-base font-bold text-[#17161C]" data-key="questiontitle4"></span>
         <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText4">
           <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
         </button>
@@ -396,7 +427,7 @@
         <!-- 5-block -->
         <div class="grid grid-cols-12 gap-6 mt-12">
           <div class="flex justify-between col-span-12">
-            <span class="text-2xl font-bold text-[#17161C]" data-key="questiontitle5"></span>
+            <span class="text-base font-bold text-[#17161C]" data-key="questiontitle5"></span>
             <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText5">
               <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
             </button>
@@ -409,7 +440,7 @@
              <!-- 6-block -->
              <div class="grid grid-cols-12 gap-6 mt-12">
               <div class="flex justify-between col-span-12">
-                <span class="text-2xl font-bold text-[#17161C]" data-key="questiontitle6"></span>
+                <span class="text-base font-bold text-[#17161C]" data-key="questiontitle6"></span>
                 <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText6">
                   <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
                 </button>
@@ -431,7 +462,7 @@
 
           <div class="grid grid-cols-12 gap-6">
             <h3
-              class="col-span-12 text-center text-6xl font-bold	 color-[#17161C] font-bold mt-10"
+              class="col-span-12 text-center text-2xl md:text-6xl lg:text-6xl font-bold	 color-[#17161C] font-bold mt-10"
               data-key="productTitle"
             ></h3>
           </div>
@@ -588,7 +619,7 @@
 <div class="bg-[#168D7133] pb-40" id="opinions">
   <div class="m-auto max-w-[1440px] before:w-full md:px-8 lg:px-32">
     <div class="grid grid-cols-12 gap-6">
-      <h3 class="col-span-12 text-center text-6xl font-bold color-[#17161C] font-bold mt-10" data-key="opinions"></h3>
+      <h3 class="col-span-12 text-center text-2xl  md:text-6xl  lg:text-6xl font-bold color-[#17161C] font-bold mt-10" data-key="opinions"></h3>
     </div>
     
     <div class="flex flex-col md:flex-row flex-wrap gap-6 mt-10 items-center justify-center">
