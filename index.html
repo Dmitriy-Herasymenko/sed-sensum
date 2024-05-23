@@ -28,10 +28,10 @@
       <div class="absolute block md:hidden  lg:hidden inset-0 bg-center bg-cover" style="background-image: url('./assets/imgs/bgMobile.svg'); z-index: -1;"></div>
       <div class="">
         
-        <a href="tel:+48607737757" class="fixed bottom-8 right-8 bg-[#168D71] text-white rounded-full p-4 shadow-lg z-50 block md:hidden">
+        <a href="tel:+48607737757" class="fixed bottom-8 right-8 bg-[#168D71] text-white rounded-full p-4 shadow-lg z-50 block md:hidden animate-pulse"">
           <img src="./assets/icons/call.svg" alt="Call">
         </a>
-        <a href="https://wa.me/48607737757" class="fixed bottom-8 right-8 bg-[#168D71] text-white rounded-full p-4 shadow-lg z-50 hidden md:block">
+        <a href="https://wa.me/48607737757" class="fixed bottom-8 right-8 bg-[#168D71] text-white rounded-full p-4 shadow-lg z-50 hidden md:block animate-pulse"">
           <img src="./assets/icons/call.svg" alt="Call">
         </a>
 
@@ -141,10 +141,16 @@
                 class="font-normal mt-8 text-base max-w-[473px]"
               ></p>
               <div class="flex  max-w-[473px]">
-                <button
+                <a
+                href="tel:+48 607 737 757"
                   data-key="proffesionalBtn"
-                  class="bg-[#168D71] hover:bg-inherit hover:border-[1px] hover:border-[#168D71] hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#168D71] focus:border-0 drop-shadow-md hover:drop-shadow-xl rounded-3xl px-6 py-2 text-base font-normal text-white mt-20"
-                ><a href="tel:+48 607 737 757"></a></button>
+                  class="bg-[#168D71] hover:bg-inherit hover:border-[1px] hover:border-[#168D71] hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#168D71] focus:border-0 drop-shadow-md hover:drop-shadow-xl rounded-3xl max-w-[700px] px-4 py-2 whitespace-nowrap mt-20 text-base font-normal text-white block md:hidden "
+                ></a>
+                <a
+                href="https://wa.me/48607737757"
+                  data-key="proffesionalBtn"
+                  class="bg-[#168D71] hover:bg-inherit hover:border-[1px] hover:border-[#168D71] hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#168D71] focus:border-0 drop-shadow-md hover:drop-shadow-xl rounded-3xl px-6 py-2 text-base font-normal text-white mt-20 hidden md:block"
+                ></a>
               </div>
             </div>
             <div class="col-span-6 flex justify-end hidden md:block lg:block" >
@@ -685,7 +691,7 @@
         <h3 data-key="contactUsTitleSecond"></h3>
         <div class="flex gap-6 mt-3 md:mt-10 lg:mt-10 text-sm font-light text-[#FCF5DB]">
           <div data-key="contactUsTitlePhone2" class="min-w-[80px]"></div>
-          <div data-key="contactUsPhone2" type="tel"></div>
+          <a data-key="contactUsPhone2" href="tel:+48 607 737 757" class="pointer"></a>
         </div>
         <div class="flex gap-6 mt-5 text-sm font-light text-[#FCF5DB]">
           <div data-key="contactUsTitleMail2" class="min-w-[80px]"></div>
