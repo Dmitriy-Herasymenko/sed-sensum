@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+  />
     <title>sed sansum</title>
     <!-- Убедитесь, что эти классы включены в Tailwind CSS конфигурации -->
 <style>
@@ -134,7 +139,7 @@
             <div class="col-span-6 flex flex-col justify-center">
               <h2
                 data-key="proffesionalTitle"
-                class="font-bold text-4xl lg:text-6xl md:text-5xl leading-[72px]"
+                class="font-bold text-4xl lg:text-6xl md:text-4xl leading-[72px]"
               ></h2>
               <p
                 data-key="proffesionalSubtitle"
@@ -634,18 +639,41 @@
     <div class="grid grid-cols-12 gap-6">
       <h3 class="col-span-12 text-center text-2xl  md:text-6xl  lg:text-6xl font-bold color-[#17161C] font-bold mt-3 md:mt-10 lg:mt-10" data-key="opinions"></h3>
     </div>
-    
-    <div class="flex flex-col md:flex-row flex-wrap gap-6mt-3 md:mt-10 lg:mt-10 items-center justify-center">
-      <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
-        <img src="./assets/imgs/opinie1.svg" />
-      </div>
-      <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
-        <img src="./assets/imgs/opinie2.svg" />
-      </div>
-      <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
-        <img src="./assets/imgs/opinie3.svg" />
+    <!-- desktop and mobile-->
+    <div class="block md:hidden lg:block">
+      <div class="flex  flex-col gap-6 md:flex-row flex-wrap gap-6mt-3 md:mt-10 lg:mt-10 items-center justify-center">
+        <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
+          <img src="./assets/imgs/opinie1.svg" />
+        </div>
+        <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
+          <img src="./assets/imgs/opinie2.svg" />
+        </div>
+        <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
+          <img src="./assets/imgs/opinie3.svg" />
+        </div>
       </div>
     </div>
+
+        <!-- tablet-->
+        <div class="hidden md:block lg:hidden">
+          <div class="flex  flex-col gap-6 md:flex-row flex-wrap gap-6mt-3 md:mt-10 lg:mt-10 items-center justify-center">
+            <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
+              <img src="./assets/imgs/opinie1.svg" />
+            </div>
+            <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
+              <img src="./assets/imgs/opinie2.svg" />
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <div class=" mt-3 md:mt-10 lg:mt-10">
+              <img src="./assets/imgs/opinie3.svg" />
+            </div>
+          </div>
+       
+        </div>
+  
+
+
 
     <div class="col-span-12 flex justify-end mt-6 px-12">
       <a href="https://maps.app.goo.gl/ohboBMfLMXJv8JoY8" target="_blank">
@@ -664,23 +692,25 @@
     </div>
     <div class="grid grid-cols-12 gap-6 mt-3 md:mt-10 lg:mt-10">
       <div class="col-span-12 md:col-span-6 mt-3 md:mt-10 lg:mt-10" id="contactUs">
-        <form class="text-[#FCF5DB]">
+        <form class="text-[#FCF5DB]"  
+        action="https://formspree.io/f/mqkrobnn"
+        method="POST">
           <h3 data-key="contactUsTitle"></h3>
           <div class="mb-5 mt-5 text-3xl font-normal"> 
-            <label for="userName" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsName"></label>
-            <input type="text" id="userName" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="name" required />
+            <label class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsName"></label>
+            <input type="text" id='name' name="name" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="name" required />
           </div>
           <div class="mb-5">
-            <label for="userPhone" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsPhone"></label>
-            <input type="text" id="userPhone" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5"  placeholder="+48 607 737 757" required />
+            <label  class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsPhone"></label>
+            <input type="text" id="userPhone" name='phone' class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5"  placeholder="+48 607 737 757" required />
           </div>
           <div class="mb-5">
-            <label for="userEmail" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsMail"></label>
-            <input type="email" id="userEmail" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="email@gmail.com" required />
+            <label class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsMail"></label>
+            <input type="email" id="userEmail" name="mail" class="w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="email@gmail.com" required />
           </div>
           <div class="mb-5">
-            <label for="message" class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsMessage"></label>
-            <textarea id="message" class="w-full h-[106px] bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 p-2.5" placeholder="message" required></textarea>
+            <label  class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsMessage"></label>
+            <textarea id="message" class="w-full h-[106px] bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 p-2.5" placeholder="message" name="message" required></textarea>
           </div>
           <div class="w-full flex justify-end">
             <button type="submit" class="py-2.5 mt-4 px-5 mb-2 text-sm font-medium text-[#FCF5DB] focus:outline-none rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100" data-key="contactUsBtn"></button>
