@@ -97,11 +97,16 @@
   "contactUsMessage": "Message",
   "contactUsTitleSecond": "Contact Us",
   "contactUsTitlePhone2": "Phone:",
-  "contactUsPhone2": "+48 607 737 757",
+  "contactUsPhone2": "+48793136240",
   "contactUsTitleMail2": "Mail:",
-  "contactUsMail2": "filip.kostek@gmail.com",
+  "contactUsMail2": "sedsensum@gmail.com",
   "contactUsTitleAdress": "Address:",
   "contactUsAdress": "3 Maja 27, Zlotoryja 59-500",
   "contactUsTitleSocial": "Social media ",
-  "contactUsBtn": "Send"
+  "contactUsBtn": "Send",
+    "placeholders": {
+      "contactUsName": "Name",
+      "contactUsEmail": "Email",
+      "contactUsMessage": "Message"
+    }
 }
