@@ -1,470 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link href="
 https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.min.css
 " rel="stylesheet">
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
-  />
-    <title>sed sensum</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/inputmask.min.js" integrity="sha512-c7JzgpnsV8xF9fgCSaIQrjcC3EOBc6L9og90EYx2IcFz9A1W9YojWpZXV4tmftOCNVhRMIGJCE0Z1mHcbV/g+g==" crossorigin="anonymous"></script>
-
-   
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  <title>sed sensum</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/inputmask.min.js"
+    integrity="sha512-c7JzgpnsV8xF9fgCSaIQrjcC3EOBc6L9og90EYx2IcFz9A1W9YojWpZXV4tmftOCNVhRMIGJCE0Z1mHcbV/g+g=="
+    crossorigin="anonymous"></script>
 
 
-<style>
-  .max-h-0 { max-height: 0; }
-  .transition-all { transition: all 0.1s ease-in-out; }
-  html {
-  scroll-behavior: smooth;
-}
-  
-</style>
-
-  </head>
-  <body style="font-family: 'STIX Two Text', serif" class="bg-[#FCF5DB]">
-    <!-- px-32 -->
-    <div class="m-auto">
-      <div class="absolute hidden lg:block inset-0 bg-center bg-cover" style="background-image: url('./assets/imgs/bg.svg'); z-index: -1;"></div>
-      <div class="absolute hidden md:block  lg:hidden inset-0 bg-center bg-cover" style="background-image: url('./assets/imgs/bgLaptop.svg'); z-index: -1;"></div>
-      <div class="absolute block md:hidden  lg:hidden inset-0 bg-center bg-cover" style="background-image: url('./assets/imgs/bgMobile.svg'); z-index: -1;"></div>
-      <div class="">
-        
-        <a href="tel:+48607737757" class="fixed bottom-8 right-8 bg-[#168D71] text-white rounded-full p-4 shadow-lg z-50 block md:hidden animate-pulse"">
-          <img src="./assets/icons/call.svg" alt="Call">
-        </a>
-        <a href="https://wa.me/48607737757" class="fixed bottom-8 right-8 bg-[#168D71] text-white rounded-full p-4 shadow-lg z-50 hidden md:block animate-pulse"">
-          <img src="./assets/icons/call.svg" alt="Call">
-        </a>
 
 
-        <!-- navigation block -->
-        <div class="hidden md:block lg:block">
-          <nav class="m-auto max-w-[1440px] px-32 md:px-8 lg:px-32 flex justify-between items-center pt-10"  id="main">
-            <img src="./assets/imgs/LOGO.svg" alt="" class="col-span-3" />
-            <div class="gap-12">
-              <a href="#aboutUs" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal" data-key="about"></a>
-              <a href="#priceList" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal" data-key="price"></a>
-              <a
-                href="#opinions"
-                class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal"
-                data-key="opinions"
-              ></a>
-              <a
-                href="#contactUs"
-                class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal "
-                data-key="contacts"
-              ></a>
-              <a href="#faq" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal" data-key="faq"></a>
+  <style>
+    .max-h-0 {
+      max-height: 0;
+    }
+
+    .transition-all {
+      transition: all 0.1s ease-in-out;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+</head>
+
+<body style="font-family: 'STIX Two Text', serif" class="bg-[#FCF5DB]">
+  <!-- px-32 -->
+  <div class="m-auto">
+    <div class="absolute hidden lg:block inset-0 bg-center bg-cover"
+      style="background-image: url('./assets/imgs/bg.svg'); z-index: -1;"></div>
+    <div class="absolute hidden md:block  lg:hidden inset-0 bg-center bg-cover"
+      style="background-image: url('./assets/imgs/bgLaptop.svg'); z-index: -1;"></div>
+    <div class="absolute block md:hidden  lg:hidden inset-0 bg-center bg-cover"
+      style="background-image: url('./assets/imgs/bgMobile.svg'); z-index: -1;"></div>
+    <div class="">
+
+      <a href="tel:+48607737757"
+        class="fixed bottom-8 right-8 bg-[#168D71] text-white rounded-full p-4 shadow-lg z-50 block md:hidden animate-pulse"">
+          <img src=" ./assets/icons/call.svg" alt="Call">
+      </a>
+      <a href="https://wa.me/48607737757"
+        class="fixed bottom-8 right-8 bg-[#168D71] text-white rounded-full p-4 shadow-lg z-50 hidden md:block animate-pulse"">
+          <img src=" ./assets/icons/call.svg" alt="Call">
+      </a>
+
+
+      <!-- navigation block -->
+      <div class="hidden md:block lg:block">
+        <nav class="m-auto max-w-[1440px] px-32 md:px-8 lg:px-32 flex justify-between items-center pt-10" id="main">
+          <img src="./assets/imgs/LOGO.svg" alt="" class="col-span-3" />
+          <div class="gap-12">
+            <a href="#aboutUs" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal"
+              data-key="about"></a>
+            <a href="#priceList" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal"
+              data-key="price"></a>
+            <a href="#opinions" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal"
+              data-key="opinions"></a>
+            <a href="#contactUs" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal "
+              data-key="contacts"></a>
+            <a href="#faq" class="text-base hover:text-[#168D71] focus:text-[#168D71] px-4 font-normal"
+              data-key="faq"></a>
+          </div>
+          <div class="flex justify-around items-center mb-4 h-[40px]">
+            <div id="lang-en" onclick="changeIcon(this, 'en'); changeLanguage('en')"
+              class="language-option cursor-pointer underline-offset-4 text-base hover:text-[#168D71] mr-2   rounded">
+              <img class="h-[40px] focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                src="./assets/icons/langageEn.svg" alt="English" />
             </div>
-            <div class="flex justify-around items-center mb-4 h-[40px]">
-              <div
-              id="lang-en"
-              onclick="changeIcon(this, 'en'); changeLanguage('en')"
-              class="language-option cursor-pointer underline-offset-4 text-base hover:text-[#168D71] mr-2   rounded"
-          >
-              <img class="h-[40px] focus:ring-2 focus:ring-blue-500 focus:outline-none" src="./assets/icons/langageEn.svg" alt="English"/>
+            <div class="flex items-center h-[32px]">
+              <div class="h-[32px]  border-l-[1px] border-[#062B22]"></div>
             </div>
+            <div id="lang-pl" onclick="changeIcon(this, 'pl'); changeLanguage('pl')"
+              class="language-option cursor-pointer underline-offset-4 text-base hover:text-[#168D71]  ml-2 rounded">
+              <img class="h-[40px] focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                src="./assets/icons/languagePlBorder.svg" alt="Polish" />
+            </div>
+          </div>
+
+        </nav>
+      </div>
+
+      <!-- Mobile Menu Burger-->
+      <div id="mobileMenu" class="fixed inset-0 bg-[#96FFE6] z-50 hidden">
+        <a href="#" class="text-white text-3xl font-bold p-8 ">
+          <img src="./assets/icons/logoHamburger.svg" class='w-[104px] h-[20px] ml-6' />
+          <div class="w-full h-[1px] mt-4  bg-[#1A856C]"></div>
+        </a>
+        <div class="flex flex-col  h-full  ">
+          <a href="#aboutUs" class="block text-[#062B22] text-base py-4 px-6 hover:bg-gray-700">About Us</a>
+          <a href="#opinions" class="block text-[#062B22] text-base py-4 px-6 hover:bg-gray-700">Opinions</a>
+          <a href="#contactUs" class="block text-[#062B22] text-base  py-4 px-6 hover:bg-gray-700">Contact Us</a>
+          <div class="w-full h-[1px] mt-4  bg-[#1A856C]"></div>
+
+
+        </div>
+
+      </div>
+
+      <!-- Navbar burger -->
+      <nav class="block md:hidden p-4 ">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+          <a href="#" class="text-white text-3xl font-bold">
+            <img src="./assets/imgs/LOGO.svg" alt="" class="w-[100px] h-[50px]" />
+          </a>
+          <div class="hidden md:flex space-x-4">
+            <a href="#aboutUs" class="text-[#062B22] text-base font-normal">About Us</a>
+            <a href="#opinions" class="text-[#062B22] text-base font-normal">Opinions</a>
+            <a href="#contactUs" class="text-[#062B22] text-base font-normal">Contact Us</a>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="flex  h-[40px]">
+              <div id="lang-en-mob" onclick="changeIcon(this, 'en'); changeLanguage('en')"
+                class="language-option cursor-pointer underline-offset-4 text-base hover:text-[#168D71] mr-2   rounded">
+                <img class="h-[40px] focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  src="./assets/icons/langageEn.svg" alt="English" />
+              </div>
               <div class="flex items-center h-[32px]">
-                  <div class="h-[32px]  border-l-[1px] border-[#062B22]"></div>
+                <div class="h-[32px]  border-l-[1px] border-[#062B22]"></div>
               </div>
-              <div
-              id="lang-pl"
-              onclick="changeIcon(this, 'pl'); changeLanguage('pl')"
-              class="language-option cursor-pointer underline-offset-4 text-base hover:text-[#168D71]  ml-2 rounded"
-          >
-              <img class="h-[40px] focus:ring-2 focus:ring-blue-500 focus:outline-none" src="./assets/icons/languagePlBorder.svg" alt="Polish"/>
-          </div>
-          </div>
-          
-          </nav>
-        </div>
-
-        <!-- Mobile Menu Burger-->
-<div id="mobileMenu" class="fixed inset-0 bg-[#96FFE6] z-50 hidden">
-  <a href="#" class="text-white text-3xl font-bold p-8 ">
-    <img src="./assets/icons/logoHamburger.svg" class='w-[104px] h-[20px] ml-6'  />
-    <div class="w-full h-[1px] mt-4  bg-[#1A856C]"></div>
-  </a>
-  <div class="flex flex-col  h-full  ">
-    <a href="#aboutUs" class="block text-[#062B22] text-base py-4 px-6 hover:bg-gray-700">About Us</a>
-    <a href="#opinions" class="block text-[#062B22] text-base py-4 px-6 hover:bg-gray-700">Opinions</a>
-    <a href="#contactUs" class="block text-[#062B22] text-base  py-4 px-6 hover:bg-gray-700">Contact Us</a>
-    <div class="w-full h-[1px] mt-4  bg-[#1A856C]"></div>
-
-  
-  </div>
- 
-</div>
-
-<!-- Navbar burger -->
-<nav class="block md:hidden p-4 ">
-  <div class="max-w-7xl mx-auto flex justify-between items-center">
-    <a href="#" class="text-white text-3xl font-bold">
-      <img src="./assets/imgs/LOGO.svg" alt="" class="w-[100px] h-[50px]" />
-    </a>
-    <div class="hidden md:flex space-x-4">
-      <a href="#aboutUs" class="text-[#062B22] text-base font-normal">About Us</a>
-      <a href="#opinions" class="text-[#062B22] text-base font-normal">Opinions</a>
-      <a href="#contactUs" class="text-[#062B22] text-base font-normal">Contact Us</a>
-    </div>
-    <div class="flex items-center gap-4">
-      <div class="flex  h-[40px]">
-        <div
-        id="lang-en-mob"
-        onclick="changeIcon(this, 'en'); changeLanguage('en')"
-        class="language-option cursor-pointer underline-offset-4 text-base hover:text-[#168D71] mr-2   rounded"
-    >
-        <img class="h-[40px] focus:ring-2 focus:ring-blue-500 focus:outline-none" src="./assets/icons/langageEn.svg" alt="English"/>
-      </div>
-        <div class="flex items-center h-[32px]">
-            <div class="h-[32px]  border-l-[1px] border-[#062B22]"></div>
-        </div>
-        <div
-        id="lang-pl-mob"
-        onclick="changeIcon(this, 'pl'); changeLanguage('pl')"
-        class="language-option cursor-pointer underline-offset-4 text-base hover:text-[#168D71]  ml-2 rounded"
-    >
-        <img class="h-[40px] focus:ring-2 focus:ring-blue-500 focus:outline-none" src="./assets/icons/languagePlBorder.svg" alt="Polish"/>
-    </div>
-    </div>
-    <button id="burgerButton" class="md:hidden text-white focus:outline-none relative z-50 flex flex-col space-y-1.5">
-      <div class="w-8 h-[2px] bg-[#062B22] transition-transform duration-300 ease-in-out"></div>
-      <div class="w-8 h-[2px]  bg-[#062B22] transition-opacity duration-300 ease-in-out"></div>
-      <div class="w-8 h-[2px]  bg-[#062B22] transition-transform duration-300 ease-in-out"></div>
-    </button>
-    </div>
-
-    
-  </div>
-</nav>
-
-
-
-
-
-        <!-- proffesional block -->
-        <div class="max-w-[1440px] px-8 md:px-8 lg:px-32 m-auto md:mt-32 mt-10">
-          <div class="grid grid-cols-12 gap-6">
-            <div class="col-span-12 md:col-span-6 flex flex-col justify-center">
-              <h2
-                data-key="proffesionalTitle"
-                class="font-bold text-4xl lg:text-6xl md:text-4xl leading-[72px]"
-              ></h2>
-              <p
-                data-key="proffesionalSubtitle"
-                class="font-normal mt-8 text-base max-w-[473px]"
-              ></p>
-              <div class="flex  max-w-[473px]">
-                <a
-                href="tel:+48793136240"
-                  data-key="proffesionalBtn"
-                  class="bg-[#168D71] hover:bg-inherit hover:border-[1px] hover:border-[#168D71] hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#168D71] focus:border-0 drop-shadow-md hover:drop-shadow-xl rounded-3xl max-w-[700px] px-4 py-2 whitespace-nowrap mt-20 text-base font-normal text-white block md:hidden "
-                ></a>
-                <a
-                href="https://wa.me/+48793136240"
-                  data-key="proffesionalBtn"
-                  class="bg-[#168D71] hover:bg-inherit hover:border-[1px] hover:border-[#168D71] hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#168D71] focus:border-0 drop-shadow-md hover:drop-shadow-xl rounded-3xl px-6 py-2 text-base font-normal text-white mt-20 hidden md:block"
-                ></a>
+              <div id="lang-pl-mob" onclick="changeIcon(this, 'pl'); changeLanguage('pl')"
+                class="language-option cursor-pointer underline-offset-4 text-base hover:text-[#168D71]  ml-2 rounded">
+                <img class="h-[40px] focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  src="./assets/icons/languagePlBorder.svg" alt="Polish" />
               </div>
             </div>
-            <div class="col-span-6 flex justify-end hidden md:block lg:block" >
-              <img  src="./assets/imgs/picProffesional.svg"  class="md:h-80 h-[497px]"/>
+            <button id="burgerButton"
+              class="md:hidden text-white focus:outline-none relative z-50 flex flex-col space-y-1.5">
+              <div class="w-8 h-[2px] bg-[#062B22] transition-transform duration-300 ease-in-out"></div>
+              <div class="w-8 h-[2px]  bg-[#062B22] transition-opacity duration-300 ease-in-out"></div>
+              <div class="w-8 h-[2px]  bg-[#062B22] transition-transform duration-300 ease-in-out"></div>
+            </button>
+          </div>
+
+
+        </div>
+      </nav>
+
+
+
+
+
+      <!-- proffesional block -->
+      <div class="max-w-[1440px] px-8 md:px-8 lg:px-32 m-auto md:mt-32 mt-10">
+        <div class="grid grid-cols-12 gap-6">
+          <div class="col-span-12 md:col-span-6 flex flex-col justify-center">
+            <h2 data-key="proffesionalTitle" class="font-bold text-4xl lg:text-6xl md:text-4xl leading-[72px]"></h2>
+            <p data-key="proffesionalSubtitle" class="font-normal mt-8 text-base max-w-[473px]"></p>
+            <div class="flex  max-w-[473px]">
+              <a href="tel:+48793136240" data-key="proffesionalBtn"
+                class="bg-[#168D71] hover:bg-inherit hover:border-[1px] hover:border-[#168D71] hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#168D71] focus:border-0 drop-shadow-md hover:drop-shadow-xl rounded-3xl max-w-[700px] px-4 py-2 whitespace-nowrap mt-20 text-base font-normal text-white block md:hidden "></a>
+              <a href="https://wa.me/+48793136240" data-key="proffesionalBtn"
+                class="bg-[#168D71] hover:bg-inherit hover:border-[1px] hover:border-[#168D71] hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#168D71] focus:border-0 drop-shadow-md hover:drop-shadow-xl rounded-3xl px-6 py-2 text-base font-normal text-white mt-20 hidden md:block"></a>
+            </div>
+          </div>
+          <div class="col-span-6 flex justify-end hidden md:block lg:block">
+            <img src="./assets/imgs/picProffesional.svg" class="md:h-80 h-[497px]" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- unique offer block -->
+    <div class="mt-20 md:mt-48 lg:mt-48 max-w-[1440px] md:px-8 lg:px-32 m-auto">
+      <div class="grid grid-cols-12 gap-3 md:gap-6 lg:gap-6">
+        <h3
+          class="col-span-12 text-center text-base font-normal md:text-4xl lg:text-4xl md:font-semibold lg:font-semibold"
+          data-key="uniqueOfferTitle"></h3>
+        <p class="col-span-12 text-center text-base md:text-3xl lg:text-3xl" data-key="uniqueOfferSubtitle"></p>
+      </div>
+      <div class="grid grid-cols-12 gap-6 mt-3 md:mt-24 lg:mt-24">
+        <div class="flex flex-col col-span-3">
+          <h2 class="color-[#17161C] text-xl md:text-3xl font-bold text-center" data-key="uniqueOfferNumber1"></h2>
+          <p class="color-[#17161C] font-normal text-xs md:text-base lg:text-base text-center mt-2 md:mt-5 lg:mt-5"
+            data-key="uniqueOfferDescriptionNumber1"></p>
+        </div>
+        <div class="flex flex-col col-span-3">
+          <h2 class="color-[#17161C] text-xl md:text-3xl font-bold text-center" data-key="uniqueOfferNumber2"></h2>
+          <p class="color-[#17161C] font-normal text-xs md:text-base lg:text-base text-center mt-2 md:mt-5 lg:mt-5"
+            data-key="uniqueOfferDescriptionNumber2"></p>
+        </div>
+        <div class="flex flex-col col-span-3">
+          <h2 class="color-[#17161C] text-xl md:text-3xl font-bold text-center" data-key="uniqueOfferNumber3"></h2>
+          <p class="color-[#17161C] font-normal text-xs md:text-base lg:text-base text-center mt-2 md:mt-5 lg:mt-5"
+            data-key="uniqueOfferDescriptionNumber3"></p>
+        </div>
+        <div class="flex flex-col col-span-3">
+          <h2 class="color-[#17161C] text-xl md:text-3xl font-bold text-center" data-key="uniqueOfferNumber4"></h2>
+          <p class="color-[#17161C] font-normal text-xs md:text-base lg:text-base text-center mt-2 md:mt-5 lg:mt-5"
+            data-key="uniqueOfferDescriptionNumber4"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- our customers block -->
+    <div class="mt-20 md:mt-48 lg:mt-48 max-w-[1440px] px-4 md:px-8 lg:px-32 m-auto">
+      <div class="grid grid-cols-12 gap-6">
+        <h3 class="col-span-12 text-center text-2xl md:text-4xl lg:text-4xl font-normal color-[#17161C] font-bold"
+          data-key="ourCustomersTitle"></h3>
+      </div>
+      <div class="grid grid-cols-12 gap-6 mt-3 md:mt-16 lg:mt-16">
+        <img src="./assets/imgs/hendshake.svg"
+          class="col-span-12 md:col-span-6 h-[551px] items-center hidden md:block" />
+        <div class="col-span-12 md:col-span-6 flex flex-col justify-center">
+          <div class="flex gap-6 mt-10 md:mt-0">
+            <img src="./assets/icons/customerIcon.svg" class="h-10" />
+            <div class="max-w-[508px]">
+              <h3 class="font-bold text-base md:text-2xl lg:text-2xl" data-key="ourCustomerTitleBlock1"></h3>
+              <p class="font-normal font-base mt-3.5" data-key="ourCustomerSubtitleBlock1"></p>
+            </div>
+          </div>
+          <div class="flex gap-6 mt-3 md:mt-10 md:mt-20">
+            <img src="./assets/icons/customerIcon.svg" class="h-10" />
+            <div class="max-w-[508px]">
+              <h3 class="font-bold text-base md:text-2xl lg:text-2xl" data-key="ourCustomerTitleBlock2"></h3>
+              <p class="font-normal font-base mt-3.5" data-key="ourCustomerSubtitleBlock2"></p>
+            </div>
+          </div>
+          <div class="flex gap-6 mt-3 md:mt-10 md:mt-20">
+            <img src="./assets/icons/customerIcon.svg" class="h-10" />
+            <div class="max-w-[508px]">
+              <h3 class="font-bold ttext-base md:text-2xl lg:text-2xl" data-key="ourCustomerTitleBlock3"></h3>
+              <p class="font-normal font-base mt-3.5" data-key="ourCustomerSubtitleBlock3"></p>
+            </div>
+          </div>
+          <div class="flex gap-6 mt-3 md:mt-10 md:mt-20">
+            <img src="./assets/icons/customerIcon.svg" class="h-10" />
+            <div class="max-w-[508px]">
+              <h3 class="font-bold text-base md:text-2xl lg:text-2xl" data-key="ourCustomerTitleBlock4"></h3>
+              <p class="font-normal font-base mt-3.5" data-key="ourCustomerSubtitleBlock4"></p>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- unique offer block -->
-      <div class="mt-20 md:mt-48 lg:mt-48 max-w-[1440px] md:px-8 lg:px-32 m-auto">
-        <div class="grid grid-cols-12 gap-3 md:gap-6 lg:gap-6">
-          <h3
-            class="col-span-12 text-center text-base font-normal md:text-4xl lg:text-4xl md:font-semibold lg:font-semibold"
-            data-key="uniqueOfferTitle"
-          ></h3>
-          <p class="col-span-12 text-center text-base md:text-3xl lg:text-3xl" data-key="uniqueOfferSubtitle"></p>
+
+    <!-- translator block -->
+    <div class="mt-20 md:mt-48 lg:mt-48 bg-[#168D7140] w-full pb-10" id="aboutUs">
+      <div class="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-32">
+        <div class="grid grid-cols-12 gap-6">
+          <h3 class="col-span-12 text-center text-2xl md:text-6xl lg:text-6xl font-bold text-[#17161C] mt-10"
+            data-key="translatorTitle"></h3>
         </div>
-        <div class="grid grid-cols-12 gap-6 mt-3 md:mt-24 lg:mt-24">
-          <div class="flex flex-col col-span-3">
-            <h2
-              class="color-[#17161C] text-xl md:text-3xl font-bold text-center"
-              data-key="uniqueOfferNumber1"
-            ></h2>
-            <p
-              class="color-[#17161C] font-normal text-xs md:text-base lg:text-base text-center mt-2 md:mt-5 lg:mt-5"
-              data-key="uniqueOfferDescriptionNumber1"
-            ></p>
+        <div class="grid grid-cols-12 gap-6 mt-3 md:mt-14 lg:mt-14 items-center">
+          <div class="col-span-12 md:col-span-7">
+            <p class="font-normal text-xs	 md:text-base lg:text-base mt-5 flex items-center"
+              data-key="translatorDescription"></p>
           </div>
-          <div class="flex flex-col col-span-3">
-            <h2
-              class="color-[#17161C] text-xl md:text-3xl font-bold text-center"
-              data-key="uniqueOfferNumber2"
-            ></h2>
-            <p
-              class="color-[#17161C] font-normal text-xs md:text-base lg:text-base text-center mt-2 md:mt-5 lg:mt-5"
-              data-key="uniqueOfferDescriptionNumber2"
-            ></p>
-          </div>
-          <div class="flex flex-col col-span-3">
-            <h2
-              class="color-[#17161C] text-xl md:text-3xl font-bold text-center"
-              data-key="uniqueOfferNumber3"
-            ></h2>
-            <p
-              class="color-[#17161C] font-normal text-xs md:text-base lg:text-base text-center mt-2 md:mt-5 lg:mt-5"
-              data-key="uniqueOfferDescriptionNumber3"
-            ></p>
-          </div>
-          <div class="flex flex-col col-span-3">
-            <h2
-              class="color-[#17161C] text-xl md:text-3xl font-bold text-center"
-              data-key="uniqueOfferNumber4"
-            ></h2>
-            <p
-              class="color-[#17161C] font-normal text-xs md:text-base lg:text-base text-center mt-2 md:mt-5 lg:mt-5"
-              data-key="uniqueOfferDescriptionNumber4"
-            ></p>
+          <div class="col-span-12 md:col-span-5 flex justify-center">
+            <img src="./assets/imgs/computer.svg" class="w-[220px] md:w-[324px] h-auto" alt="">
           </div>
         </div>
       </div>
-
-<!-- our customers block -->
-<div class="mt-20 md:mt-48 lg:mt-48 max-w-[1440px] px-4 md:px-8 lg:px-32 m-auto">
-  <div class="grid grid-cols-12 gap-6">
-    <h3
-      class="col-span-12 text-center text-2xl md:text-4xl lg:text-4xl font-normal color-[#17161C] font-bold"
-      data-key="ourCustomersTitle"
-    ></h3>
-  </div>
-  <div class="grid grid-cols-12 gap-6 mt-3 md:mt-16 lg:mt-16">
-    <img src="./assets/imgs/hendshake.svg" class="col-span-12 md:col-span-6 h-[551px] items-center hidden md:block" />
-    <div class="col-span-12 md:col-span-6 flex flex-col justify-center">
-      <div class="flex gap-6 mt-10 md:mt-0">
-        <img src="./assets/icons/customerIcon.svg" class="h-10" />
-        <div class="max-w-[508px]">
-          <h3 class="font-bold text-base md:text-2xl lg:text-2xl" data-key="ourCustomerTitleBlock1"></h3>
-          <p class="font-normal font-base mt-3.5" data-key="ourCustomerSubtitleBlock1"></p>
-        </div>
-      </div>
-      <div class="flex gap-6 mt-3 md:mt-10 md:mt-20">
-        <img src="./assets/icons/customerIcon.svg" class="h-10" />
-        <div class="max-w-[508px]">
-          <h3 class="font-bold text-base md:text-2xl lg:text-2xl" data-key="ourCustomerTitleBlock2"></h3>
-          <p class="font-normal font-base mt-3.5" data-key="ourCustomerSubtitleBlock2"></p>
-        </div>
-      </div>
-      <div class="flex gap-6 mt-3 md:mt-10 md:mt-20">
-        <img src="./assets/icons/customerIcon.svg" class="h-10" />
-        <div class="max-w-[508px]">
-          <h3 class="font-bold ttext-base md:text-2xl lg:text-2xl" data-key="ourCustomerTitleBlock3"></h3>
-          <p class="font-normal font-base mt-3.5" data-key="ourCustomerSubtitleBlock3"></p>
-        </div>
-      </div>
-      <div class="flex gap-6 mt-3 md:mt-10 md:mt-20">
-        <img src="./assets/icons/customerIcon.svg" class="h-10" />
-        <div class="max-w-[508px]">
-          <h3 class="font-bold text-base md:text-2xl lg:text-2xl" data-key="ourCustomerTitleBlock4"></h3>
-          <p class="font-normal font-base mt-3.5" data-key="ourCustomerSubtitleBlock4"></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- translator block -->
-<div class="mt-20 md:mt-48 lg:mt-48 bg-[#168D7140] w-full pb-10" id="aboutUs">
-  <div class="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-32">
-    <div class="grid grid-cols-12 gap-6">
-      <h3 class="col-span-12 text-center text-2xl md:text-6xl lg:text-6xl font-bold text-[#17161C] mt-10" data-key="translatorTitle"></h3>
-    </div>
-    <div class="grid grid-cols-12 gap-6 mt-3 md:mt-14 lg:mt-14 items-center">
-      <div class="col-span-12 md:col-span-7">
-        <p class="font-normal text-xs	 md:text-base lg:text-base mt-5 flex items-center" data-key="translatorDescription"></p>
-      </div>
-      <div class="col-span-12 md:col-span-5 flex justify-center">
-        <img src="./assets/imgs/computer.svg" class="w-[220px] md:w-[324px] h-auto" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      <!-- questions block-->
-      <div class="mt-20 md:mt-48 lg:mt-48 m-auto max-w-[1440px] px-8 md:px-8 lg:px-32">
-
-        <div class="grid grid-cols-12 gap-6" id="faq">
-          <h3
-            class="col-span-12 text-center text-2xl md:text-6xl lg:text-6xl font-bold	 color-[#17161C] font-bold "
-            data-key="questionsTitle"
-          ></h3>
-        </div>
-
-
-
-
-
-    <!-- desktop -->
-    <div class="hidden lg:block">
-
-
-      <div class="grid grid-cols-12 gap-6 mt-12">
-        <span class="col-span-4 text-base md:text-2xl lg:text-2xl font-bold color-[#17161C]" data-key="questiontitle1"></span>
-        <div class="col-span-8 text-container">
-          <p class="text-base" data-key="questionDescription1"></p>
-          <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden1"></p>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-12 gap-6 mt-6">
-        <div class="col-start-5 col-span-8 flex justify-end">
-          <button id="questionDescriptionHidden1" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button>
-        </div>
-  </div>
-
-      <div class="grid grid-cols-12 gap-6 mt-12">
-        <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle2"></span>
-        <div class="col-span-8 text-container">
-          <p class="text-base" data-key="questionDescription2"></p>
-          <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden2"></p>
-        </div>
-      </div>
-  
-      <div class="grid grid-cols-12 gap-6 mt-6">
-            <div class="col-start-5 col-span-8 flex justify-end">
-              <!-- <button id="questionDescriptionHidden2" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button> -->
-            </div>
-      </div>
-
-      <div class="grid grid-cols-12 gap-6 mt-12">
-        <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle3"></span>
-        <div class="col-span-8 text-container">
-          <p class="text-base" data-key="questionDescription3"></p>
-          <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden3"></p>
-        </div>
-      </div>
-  
-      <div class="grid grid-cols-12 gap-6 mt-6">
-            <div class="col-start-5 col-span-8 flex justify-end">
-              <!-- <button id="questionDescriptionHidden3" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button> -->
-            </div>
-      </div>
-
-
-      <div class="grid grid-cols-12 gap-6 mt-12">
-        <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle4"></span>
-        <div class="col-span-8 text-container">
-          <p class="text-base" data-key="questionDescription4"></p>
-          <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden4"></p>
-        </div>
-      </div>
-  
-      <div class="grid grid-cols-12 gap-6 mt-6">
-            <div class="col-start-5 col-span-8 flex justify-end">
-              <!-- <button id="questionDescriptionHidden4" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button> -->
-            </div>
-      </div>
-
-
-      <div class="grid grid-cols-12 gap-6 mt-12">
-        <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle5"></span>
-        <div class="col-span-8 text-container">
-          <p class="text-base" data-key="questionDescription5"></p>
-          <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden5"></p>
-        </div>
-      </div>
-  
-      <div class="grid grid-cols-12 gap-6 mt-6">
-            <div class="col-start-5 col-span-8 flex justify-end">
-              <button id="questionDescriptionHidden5" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button>
-            </div>
-      </div>
-
-
-      <div class="grid grid-cols-12 gap-6 mt-12">
-        <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle6"></span>
-        <div class="col-span-8 text-container">
-          <p class="text-base" data-key="questionDescription6"></p>
-          <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out" data-key="questionDescriptionHidden6"></p>
-        </div>
-      </div>
-  
-      <div class="grid grid-cols-12 gap-6 mt-6">
-            <div class="col-start-5 col-span-8 flex justify-end">
-              <button id="questionDescriptionHidden6" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button>
-            </div>
-      </div>
-  
-
     </div>
 
-    <!-- tablet -->
-    <div class="block lg:hidden">
 
-      <!-- 1-block -->
-      <div class="grid grid-cols-12 gap-6 mt-3 md:mt-12 lg:mt-12">
-        <div class="flex justify-between col-span-12">
-          <span class="text-base font-bold text-[#17161C]" data-key="questiontitle1"></span>
-          <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText1">
-            <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
-          </button>
+    <!-- questions block-->
+    <div class="mt-20 md:mt-48 lg:mt-48 m-auto max-w-[1440px] px-8 md:px-8 lg:px-32">
+
+      <div class="grid grid-cols-12 gap-6" id="faq">
+        <h3 class="col-span-12 text-center text-2xl md:text-6xl lg:text-6xl font-bold	 color-[#17161C] font-bold "
+          data-key="questionsTitle"></h3>
+      </div>
+
+
+
+
+
+      <!-- desktop -->
+      <div class="hidden lg:block">
+
+
+        <div class="grid grid-cols-12 gap-6 mt-12">
+          <span class="col-span-4 text-base md:text-2xl lg:text-2xl font-bold color-[#17161C]"
+            data-key="questiontitle1"></span>
+          <div class="col-span-8 text-container">
+            <p class="text-base" data-key="questionDescription1"></p>
+            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out"
+              data-key="questionDescriptionHidden1"></p>
+          </div>
         </div>
-        <div class="col-span-12 text-container">
-          <p id="hiddenText1" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out" data-key="questionDescriptionMobile1">
-          </p>
+
+        <div class="grid grid-cols-12 gap-6 mt-6">
+          <div class="col-start-5 col-span-8 flex justify-end">
+            <button id="questionDescriptionHidden1"
+              class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full"
+              data-key="questionBtn"></button>
+          </div>
         </div>
-      </div>
-      <!-- 2-block -->
-      <div class="grid grid-cols-12 gap-6 mt-3 md:mt-12 lg:mt-12">
-        <div class="flex justify-between col-span-12">
-          <span class="text-base font-bold text-[#17161C]" data-key="questiontitle2">Заголовок 2</span>
-          <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText2">
-            <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
-          </button>
+
+        <div class="grid grid-cols-12 gap-6 mt-12">
+          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle2"></span>
+          <div class="col-span-8 text-container">
+            <p class="text-base" data-key="questionDescription2"></p>
+            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out"
+              data-key="questionDescriptionHidden2"></p>
+          </div>
         </div>
-        <div class="col-span-12 text-container">
-          <p id="hiddenText2" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out" data-key="questionDescriptionMobile2">
-          </p>
+
+        <div class="grid grid-cols-12 gap-6 mt-6">
+          <div class="col-start-5 col-span-8 flex justify-end">
+            <!-- <button id="questionDescriptionHidden2" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button> -->
+          </div>
         </div>
+
+        <div class="grid grid-cols-12 gap-6 mt-12">
+          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle3"></span>
+          <div class="col-span-8 text-container">
+            <p class="text-base" data-key="questionDescription3"></p>
+            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out"
+              data-key="questionDescriptionHidden3"></p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-6 mt-6">
+          <div class="col-start-5 col-span-8 flex justify-end">
+            <!-- <button id="questionDescriptionHidden3" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button> -->
+          </div>
+        </div>
+
+
+        <div class="grid grid-cols-12 gap-6 mt-12">
+          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle4"></span>
+          <div class="col-span-8 text-container">
+            <p class="text-base" data-key="questionDescription4"></p>
+            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out"
+              data-key="questionDescriptionHidden4"></p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-6 mt-6">
+          <div class="col-start-5 col-span-8 flex justify-end">
+            <!-- <button id="questionDescriptionHidden4" class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full" data-key="questionBtn"></button> -->
+          </div>
+        </div>
+
+
+        <div class="grid grid-cols-12 gap-6 mt-12">
+          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle5"></span>
+          <div class="col-span-8 text-container">
+            <p class="text-base" data-key="questionDescription5"></p>
+            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out"
+              data-key="questionDescriptionHidden5"></p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-6 mt-6">
+          <div class="col-start-5 col-span-8 flex justify-end">
+            <button id="questionDescriptionHidden5"
+              class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full"
+              data-key="questionBtn"></button>
+          </div>
+        </div>
+
+
+        <div class="grid grid-cols-12 gap-6 mt-12">
+          <span class="col-span-4 text-2xl font-bold color-[#17161C]" data-key="questiontitle6"></span>
+          <div class="col-span-8 text-container">
+            <p class="text-base" data-key="questionDescription6"></p>
+            <p class="max-h-0 overflow-hidden transition-all duration-500 ease-out"
+              data-key="questionDescriptionHidden6"></p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-6 mt-6">
+          <div class="col-start-5 col-span-8 flex justify-end">
+            <button id="questionDescriptionHidden6"
+              class="read-more-btn text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-6 rounded-full"
+              data-key="questionBtn"></button>
+          </div>
+        </div>
+
+
       </div>
-     <!-- 3-block -->
-     <div class="grid grid-cols-12 gap-6 mt-3 md:mt-12 lg:mt-12">
-      <div class="flex justify-between col-span-12">
-        <span class="text-base font-bold text-[#17161C]" data-key="questiontitle3"></span>
-        <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText3">
-          <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
-        </button>
-      </div>
-      <div class="col-span-12 text-container">
-        <p id="hiddenText3" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out" data-key="questionDescriptionMobile3">
-        </p>
-      </div>
-    </div>
-     <!-- 4-block -->
-     <div class="grid grid-cols-12 gap-6 mt-3 md:mt-12 lg:mt-12">
-      <div class="flex justify-between col-span-12">
-        <span class="text-base font-bold text-[#17161C]" data-key="questiontitle4"></span>
-        <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText4">
-          <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
-        </button>
-      </div>
-      <div class="col-span-12 text-container">
-        <p id="hiddenText4" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out" data-key="questionDescriptionMobile4">
-        </p>
-      </div>
-    </div>
+
+      <!-- tablet -->
+      <div class="block lg:hidden">
+
+        <!-- 1-block -->
+        <div class="grid grid-cols-12 gap-6 mt-3 md:mt-12 lg:mt-12">
+          <div class="flex justify-between col-span-12">
+            <span class="text-base font-bold text-[#17161C]" data-key="questiontitle1"></span>
+            <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText1">
+              <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
+            </button>
+          </div>
+          <div class="col-span-12 text-container">
+            <p id="hiddenText1" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out"
+              data-key="questionDescriptionMobile1">
+            </p>
+          </div>
+        </div>
+        <!-- 2-block -->
+        <div class="grid grid-cols-12 gap-6 mt-3 md:mt-12 lg:mt-12">
+          <div class="flex justify-between col-span-12">
+            <span class="text-base font-bold text-[#17161C]" data-key="questiontitle2">Заголовок 2</span>
+            <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText2">
+              <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
+            </button>
+          </div>
+          <div class="col-span-12 text-container">
+            <p id="hiddenText2" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out"
+              data-key="questionDescriptionMobile2">
+            </p>
+          </div>
+        </div>
+        <!-- 3-block -->
+        <div class="grid grid-cols-12 gap-6 mt-3 md:mt-12 lg:mt-12">
+          <div class="flex justify-between col-span-12">
+            <span class="text-base font-bold text-[#17161C]" data-key="questiontitle3"></span>
+            <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText3">
+              <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
+            </button>
+          </div>
+          <div class="col-span-12 text-container">
+            <p id="hiddenText3" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out"
+              data-key="questionDescriptionMobile3">
+            </p>
+          </div>
+        </div>
+        <!-- 4-block -->
+        <div class="grid grid-cols-12 gap-6 mt-3 md:mt-12 lg:mt-12">
+          <div class="flex justify-between col-span-12">
+            <span class="text-base font-bold text-[#17161C]" data-key="questiontitle4"></span>
+            <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText4">
+              <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
+            </button>
+          </div>
+          <div class="col-span-12 text-container">
+            <p id="hiddenText4" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out"
+              data-key="questionDescriptionMobile4">
+            </p>
+          </div>
+        </div>
         <!-- 5-block -->
         <div class="grid grid-cols-12 gap-6 mt-3 md:mt-12 lg:mt-12">
           <div class="flex justify-between col-span-12">
@@ -474,213 +458,236 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.min.css
             </button>
           </div>
           <div class="col-span-12 text-container">
-            <p id="hiddenText5" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out" data-key="questionDescriptionMobile5">
+            <p id="hiddenText5" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out"
+              data-key="questionDescriptionMobile5">
             </p>
           </div>
         </div>
-             <!-- 6-block -->
-             <div class="grid grid-cols-12 gap-6 mt-3 md:mt-12 lg:mt-12">
-              <div class="flex justify-between col-span-12">
-                <span class="text-base font-bold text-[#17161C]" data-key="questiontitle6"></span>
-                <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText6">
-                  <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
-                </button>
+        <!-- 6-block -->
+        <div class="grid grid-cols-12 gap-6 mt-3 md:mt-12 lg:mt-12">
+          <div class="flex justify-between col-span-12">
+            <span class="text-base font-bold text-[#17161C]" data-key="questiontitle6"></span>
+            <button class="toggleButton transform transition-transform duration-500" data-target="hiddenText6">
+              <img src="./assets/icons/arrow-up.svg" class="toggleIcon w-6 h-6" />
+            </button>
+          </div>
+          <div class="col-span-12 text-container">
+            <p id="hiddenText6" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out"
+              data-key="questionDescriptionMobile6">
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- product block -->
+    <div class="bg-[#168D7133] pb-20 md:pb-10 lg:pb-10" id="priceList">
+      <div class=" m-auto max-w-[1440px] mt-20 md:mt-48 lg:mt-48  before:w-full md:px-8 lg:px-32">
+
+        <div class="grid grid-cols-12 gap-6">
+          <h3
+            class="col-span-12 text-center text-2xl md:text-6xl lg:text-6xl font-bold	 color-[#17161C] font-bold mt-10"
+            data-key="productTitle"></h3>
+        </div>
+
+        <!-- desktop -->
+        <div class="hidden lg:block">
+          <div class="grid grid-cols-12 gap-6 mt-10">
+            <!-- Block 1 -->
+            <div class="col-span-4 bg-[#FCF5DB] flex flex-col items-center mt-10">
+              <img src="./assets/icons/price1.svg" class="mt-16" />
+              <span class="mt-20 text-center">
+                <p data-key="productTitle1Block1"></p>
+                <p data-key="productTitle2Block1"></p>
+              </span>
+              <span data-key="productPriceBlock1" class="mt-10 text-center"></span>
+              <span data-key="productPriceExpressBlock1"></span>
+
+              <a href="tel:+48793136240"
+                class="w-3/6 shadow-lg py-2.5 mt-10 px-5 mb-2 text-sm font-medium text-white rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71] hidden md:block text-center"
+                data-key="productBtn"></a>
+
+            </div>
+            <!-- Block 2 -->
+            <div class="col-span-4 bg-[#FCF5DB] flex flex-col items-center mt-10">
+              <img src="./assets/icons/price2.svg" class="mt-16" />
+              <span class="mt-20 text-center">
+                <p data-key="productTitle1Block2"></p>
+                <p data-key="productTitle2Block2"></p>
+              </span>
+              <span data-key="productPriceBlock2" class="mt-10 text-center"></span>
+              <span data-key="productPriceExpressBlock2"></span>
+              <a href="tel:+48793136240"
+                class="w-3/6 shadow-lg py-2.5 mt-10 px-5 mb-2 text-sm font-medium text-white rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71] hidden md:block text-center"
+                data-key="productBtn"></a>
+              <div class="mt-10"></div>
+            </div>
+            <!-- Block 3 -->
+            <div class="col-span-4 bg-[#FCF5DB] flex flex-col items-center mt-10">
+              <img src="./assets/icons/price3.svg" class="mt-16" />
+              <span class="mt-20 text-center">
+                <p data-key="productTitle1Block3"></p>
+                <p data-key="productTitle2Block3"></p>
+              </span>
+              <span data-key="productPriceBlock3" class="mt-[80px] text-center"></span>
+              <div data-key="productPriceExpressBlock3"></div>
+              <a href="tel:+48793136240"
+                class="w-3/6 shadow-lg py-2.5 mt-10 px-5 mb-2 text-sm font-medium text-white rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71] hidden md:block text-center"
+                data-key="productBtn"></a>
+
+              <div class="mt-10"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- tablet -->
+        <div class="hidden sm:hidden md:block lg:hidden">
+          <div class="grid grid-cols-12 gap-6 mt-10">
+            <!-- Block 1 -->
+            <div class="col-span-6 bg-[#fff]">
+              <div class="flex justify-between px-4 gap-4 mt-4 mb-4">
+                <img src="./assets/icons/price1.svg" class="min-w-[129px] min-h-[163px]" />
+                <div class="flex flex-col">
+                  <span class="text-sm text-center">
+                    <p data-key="productTitle1Block1" class="text-sm"></p>
+                    <p data-key="productTitle2Block1" class="text-sm"></p>
+                  </span>
+                  <span data-key="productPriceBlock1" class="mt-4 text-center text-sm"></span>
+                  <a href="https://wa.me/+48793136240"
+                    class="w-full text-center shadow-lg mt-10 px-2 py-1 mb-2 text-sm font-medium text-[#FCF5DB] rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]"
+                    data-key="productBtn"></a>
+                </div>
               </div>
-              <div class="col-span-12 text-container">
-                <p id="hiddenText6" class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-out" data-key="questionDescriptionMobile6">
-                </p>
+            </div>
+            <!-- Block 2 -->
+            <div class="col-span-6 bg-[#fff]">
+              <div class="flex justify-between px-4 gap-4 mt-4 mb-4">
+                <img src="./assets/icons/price2.svg" class="min-w-[129px] min-h-[163px]" />
+                <div class="flex flex-col">
+                  <span class="text-sm text-center">
+                    <p data-key="productTitle1Block2" class="text-sm"></p>
+                    <p data-key="productTitle2Block2" class="text-sm"></p>
+                  </span>
+                  <span data-key="productPriceBlock2" class="mt-4 text-center text-sm"></span>
+                  <a href="https://wa.me/+48793136240"
+                    class="w-full text-center shadow-lg mt-10 px-2 py-1 mb-2 text-sm font-medium text-[#FCF5DB] rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]"
+                    data-key="productBtn"></a>
+                </div>
               </div>
             </div>
 
-    </div>
-
-      </div>
-
-      <!-- product block -->
-      <div class="bg-[#168D7133] pb-20 md:pb-10 lg:pb-10" id="priceList">
-        <div class=" m-auto max-w-[1440px] mt-20 md:mt-48 lg:mt-48  before:w-full md:px-8 lg:px-32">
-
-          <div class="grid grid-cols-12 gap-6">
-            <h3
-              class="col-span-12 text-center text-2xl md:text-6xl lg:text-6xl font-bold	 color-[#17161C] font-bold mt-10"
-              data-key="productTitle"
-            ></h3>
           </div>
-       
-<!-- desktop -->
-<div class="hidden lg:block">
-  <div class="grid grid-cols-12 gap-6 mt-10">
-    <!-- Block 1 -->
-    <div class="col-span-4 bg-[#FCF5DB] flex flex-col items-center mt-10">
-      <img src="./assets/icons/price1.svg" class="mt-16" />
-      <span class="mt-20 text-center">
-        <p data-key="productTitle1Block1"></p>
-        <p data-key="productTitle2Block1"></p>
-      </span>
-      <span data-key="productPriceBlock1" class="mt-10 text-center"></span>
-      <span data-key="productPriceExpressBlock1"></span>
- 
-      <a href="tel:+48793136240" class="w-3/6 shadow-lg py-2.5 mt-10 px-5 mb-2 text-sm font-medium text-white rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71] hidden md:block text-center" data-key="productBtn"></a>
-      
-    </div>
-    <!-- Block 2 -->
-    <div class="col-span-4 bg-[#FCF5DB] flex flex-col items-center mt-10">
-      <img src="./assets/icons/price2.svg" class="mt-16" />
-      <span class="mt-20 text-center">
-        <p data-key="productTitle1Block2"></p>
-        <p data-key="productTitle2Block2"></p>
-      </span>
-      <span data-key="productPriceBlock2" class="mt-10 text-center"></span>
-      <span data-key="productPriceExpressBlock2"></span>
-      <a href="tel:+48793136240" class="w-3/6 shadow-lg py-2.5 mt-10 px-5 mb-2 text-sm font-medium text-white rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71] hidden md:block text-center" data-key="productBtn"></a>
-      <div class="mt-10"></div>
-    </div>
-    <!-- Block 3 -->
-    <div class="col-span-4 bg-[#FCF5DB] flex flex-col items-center mt-10">
-      <img src="./assets/icons/price3.svg" class="mt-16" />
-      <span class="mt-20 text-center">
-        <p data-key="productTitle1Block3"></p>
-        <p data-key="productTitle2Block3"></p>
-      </span>
-      <span data-key="productPriceBlock3" class="mt-[80px] text-center"></span>
-      <div data-key="productPriceExpressBlock3"></div>
-      <a href="tel:+48793136240" class="w-3/6 shadow-lg py-2.5 mt-10 px-5 mb-2 text-sm font-medium text-white rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71] hidden md:block text-center" data-key="productBtn"></a>
+          <!-- Block 3 -->
+          <div class="grid grid-cols-12 gap-6 mt-10">
+            <div class="col-span-12 bg-[#fff] mx-auto">
+              <div class="flex justify-between px-4 gap-4 mt-4 mb-4">
+                <img src="./assets/icons/price3.svg" class="min-w-[129px] min-h-[163px]" />
+                <div class="flex flex-col">
+                  <span class="text-sm text-center">
+                    <p data-key="productTitle1Block3" class="text-sm"></p>
+                    <p data-key="productTitle2Block3" class="text-sm"></p>
+                  </span>
+                  <span data-key="productPriceBlock3" class="mt-4 text-center text-sm"></span>
+                  <a href="https://wa.me/+48793136240"
+                    class="w-full text-center shadow-lg mt-10 px-2 py-1 mb-2 text-sm font-medium text-[#FCF5DB] rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]"
+                    data-key="productBtn"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="mt-10"></div>
-    </div>
-  </div>
-</div>
+        <!-- https://wa.me/+48793136240 -->
+        <!-- mobile -->
+        <div class="block sm:block md:hidden lg:hidden">
+          <div class="grid grid-cols-12 gap-6 mt-10 px-4">
+            <!-- Block 1 -->
+            <div class="col-span-12 bg-[#fff] flex">
+              <div class="w-full flex justify-between px-4 gap-4 mt-4 mb-4">
+                <img src="./assets/icons/price1.svg" class="min-w-[129px] min-h-[163px]" />
+                <div class="flex flex-col">
+                  <span class="text-sm text-center">
+                    <p data-key="productTitle1Block1" class="text-sm"></p>
+                    <p data-key="productTitle2Block1" class="text-sm"></p>
+                  </span>
+                  <span data-key="productPriceBlock1" class="mt-4 text-center text-sm"></span>
+                  <a href="https://wa.me/+48793136240"
+                    class="w-full text-center shadow-lg mt-10 px-2 py-1 mb-2 text-sm font-medium text-[#FCF5DB] rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]"
+                    data-key="productBtn"></a>
+                </div>
+              </div>
+            </div>
+            <!-- Block 2 -->
+            <div class="col-span-12 bg-[#fff] flex">
+              <div class="w-full flex justify-between px-4 gap-4 mt-4 mb-4">
+                <img src="./assets/icons/price2.svg" class="min-w-[129px] min-h-[163px]" />
+                <div class="flex flex-col">
+                  <span class="text-sm text-center">
+                    <p data-key="productTitle1Block2" class="text-sm"></p>
+                    <p data-key="productTitle2Block2" class="text-sm"></p>
+                  </span>
+                  <span data-key="productPriceBlock2" class="mt-4 text-center text-sm"></span>
+                  <a href="https://wa.me/+48793136240"
+                    class="w-full text-center shadow-lg mt-10 px-2 py-1 mb-2 text-sm font-medium text-[#FCF5DB] rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]"
+                    data-key="productBtn"></a>
+                </div>
+              </div>
+            </div>
+            <!-- Block 3 -->
+            <div class="col-span-12 bg-[#fff] flex">
+              <div class="w-full flex justify-between px-4 gap-4 mt-4 mb-4">
+                <img src="./assets/icons/price3.svg" class="min-w-[129px] min-h-[163px]" />
+                <div class="flex flex-col">
+                  <span class="text-sm text-center">
+                    <p data-key="productTitle1Block3" class="text-sm"></p>
+                    <p data-key="productTitle2Block3" class="text-sm"></p>
+                  </span>
+                  <span data-key="productPriceBlock3" class="mt-4 text-center text-sm"></span>
+                  <a href="https://wa.me/+48793136240"
+                    class="w-full text-center shadow-lg mt-10 px-2 py-1 mb-2 text-sm font-medium text-[#FCF5DB] rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]"
+                    data-key="productBtn"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- tablet -->
-<div class="hidden sm:hidden md:block lg:hidden">
-  <div class="grid grid-cols-12 gap-6 mt-10">
-    <!-- Block 1 -->
-    <div class="col-span-6 bg-[#fff]">
-      <div class="flex justify-between px-4 gap-4 mt-4 mb-4">
-        <img src="./assets/icons/price1.svg" class="min-w-[129px] min-h-[163px]" />
-        <div class="flex flex-col">
-          <span class="text-sm text-center">
-            <p data-key="productTitle1Block1" class="text-sm"></p>
-            <p data-key="productTitle2Block1" class="text-sm"></p>
-          </span>
-          <span data-key="productPriceBlock1" class="mt-4 text-center text-sm"></span>
-          <a href="https://wa.me/+48793136240" class="w-full text-center shadow-lg mt-10 px-2 py-1 mb-2 text-sm font-medium text-[#FCF5DB] rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]" data-key="productBtn"></a>
-        </div>
-      </div>
-    </div>
-    <!-- Block 2 -->
-    <div class="col-span-6 bg-[#fff]">
-      <div class="flex justify-between px-4 gap-4 mt-4 mb-4">
-        <img src="./assets/icons/price2.svg" class="min-w-[129px] min-h-[163px]" />
-        <div class="flex flex-col">
-          <span class="text-sm text-center">
-            <p data-key="productTitle1Block2" class="text-sm"></p>
-            <p data-key="productTitle2Block2" class="text-sm"></p>
-          </span>
-          <span data-key="productPriceBlock2" class="mt-4 text-center text-sm"></span>
-          <a href="https://wa.me/+48793136240" class="w-full text-center shadow-lg mt-10 px-2 py-1 mb-2 text-sm font-medium text-[#FCF5DB] rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]" data-key="productBtn"></a>
-        </div>
+
+
+
       </div>
     </div>
 
-  </div>
-      <!-- Block 3 -->
-  <div class="grid grid-cols-12 gap-6 mt-10">
-    <div class="col-span-12 bg-[#fff] mx-auto">
-      <div class="flex justify-between px-4 gap-4 mt-4 mb-4">
-        <img src="./assets/icons/price3.svg" class="min-w-[129px] min-h-[163px]" />
-        <div class="flex flex-col">
-          <span class="text-sm text-center">
-            <p data-key="productTitle1Block3" class="text-sm"></p>
-            <p data-key="productTitle2Block3" class="text-sm"></p>
-          </span>
-          <span data-key="productPriceBlock3" class="mt-4 text-center text-sm"></span>
-          <a href="https://wa.me/+48793136240" class="w-full text-center shadow-lg mt-10 px-2 py-1 mb-2 text-sm font-medium text-[#FCF5DB] rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]" data-key="productBtn"></a>
+    <!-- opinions block -->
+    <div class="bg-[#168D7133] pb-20 md:pb-40 lg:pb-40" id="opinions">
+      <div class="m-auto max-w-[1440px] before:w-full px-4 md:px-8 lg:px-32">
+        <div class="grid grid-cols-12 gap-6">
+          <h3
+            class="col-span-12 text-center text-2xl  md:text-6xl  lg:text-6xl font-bold color-[#17161C] font-bold mt-3 md:mt-10 lg:mt-10"
+            data-key="opinions"></h3>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-   <!-- https://wa.me/+48793136240 -->
-<!-- mobile -->
-<div class="block sm:block md:hidden lg:hidden">
-  <div class="grid grid-cols-12 gap-6 mt-10 px-4">
-    <!-- Block 1 -->
-    <div class="col-span-12 bg-[#fff] flex">
-      <div class="w-full flex justify-between px-4 gap-4 mt-4 mb-4">
-        <img src="./assets/icons/price1.svg" class="min-w-[129px] min-h-[163px]" />
-        <div class="flex flex-col">
-          <span class="text-sm text-center">
-            <p data-key="productTitle1Block1" class="text-sm"></p>
-            <p data-key="productTitle2Block1" class="text-sm"></p>
-          </span>
-          <span data-key="productPriceBlock1" class="mt-4 text-center text-sm"></span>
-          <a href="https://wa.me/+48793136240" class="w-full text-center shadow-lg mt-10 px-2 py-1 mb-2 text-sm font-medium text-[#FCF5DB] rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]" data-key="productBtn"></a>
+        <!-- desktop and mobile-->
+        <div class="block md:hidden lg:block">
+          <div
+            class="flex  flex-col gap-6 md:flex-row flex-wrap gap-6mt-3 md:mt-10 lg:mt-10 items-center justify-center">
+            <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
+              <img src="./assets/imgs/opinie1.svg" />
+            </div>
+            <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
+              <img src="./assets/imgs/opinie2.svg" />
+            </div>
+            <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
+              <img src="./assets/imgs/opinie3.svg" />
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <!-- Block 2 -->
-    <div class="col-span-12 bg-[#fff] flex">
-      <div class="w-full flex justify-between px-4 gap-4 mt-4 mb-4">
-        <img src="./assets/icons/price2.svg" class="min-w-[129px] min-h-[163px]" />
-        <div class="flex flex-col">
-          <span class="text-sm text-center">
-            <p data-key="productTitle1Block2" class="text-sm"></p>
-            <p data-key="productTitle2Block2" class="text-sm"></p>
-          </span>
-          <span data-key="productPriceBlock2" class="mt-4 text-center text-sm"></span>
-          <a href="https://wa.me/+48793136240" class="w-full text-center shadow-lg mt-10 px-2 py-1 mb-2 text-sm font-medium text-[#FCF5DB] rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]" data-key="productBtn"></a>
-        </div>
-      </div>
-    </div>
-    <!-- Block 3 -->
-    <div class="col-span-12 bg-[#fff] flex">
-      <div class="w-full flex justify-between px-4 gap-4 mt-4 mb-4">
-        <img src="./assets/icons/price3.svg" class="min-w-[129px] min-h-[163px]" />
-        <div class="flex flex-col">
-          <span class="text-sm text-center">
-            <p data-key="productTitle1Block3" class="text-sm"></p>
-            <p data-key="productTitle2Block3" class="text-sm"></p>
-          </span>
-          <span data-key="productPriceBlock3" class="mt-4 text-center text-sm"></span>
-          <a href="https://wa.me/+48793136240" class="w-full text-center shadow-lg mt-10 px-2 py-1 mb-2 text-sm font-medium text-[#FCF5DB] rounded-full border border-gray-200 hover:border-[#168D71] hover:bg-inherit hover:text-[#168D71] focus:bg-[#43FCD1] focus:text-[#106651] bg-[#168D71]" data-key="productBtn"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-            
-          
-      </div>
-      </div>
-
-     <!-- opinions block -->
-<div class="bg-[#168D7133] pb-20 md:pb-40 lg:pb-40" id="opinions">
-  <div class="m-auto max-w-[1440px] before:w-full px-4 md:px-8 lg:px-32">
-    <div class="grid grid-cols-12 gap-6">
-      <h3 class="col-span-12 text-center text-2xl  md:text-6xl  lg:text-6xl font-bold color-[#17161C] font-bold mt-3 md:mt-10 lg:mt-10" data-key="opinions"></h3>
-    </div>
-    <!-- desktop and mobile-->
-    <div class="block md:hidden lg:block">
-      <div class="flex  flex-col gap-6 md:flex-row flex-wrap gap-6mt-3 md:mt-10 lg:mt-10 items-center justify-center">
-        <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
-          <img src="./assets/imgs/opinie1.svg" />
-        </div>
-        <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
-          <img src="./assets/imgs/opinie2.svg" />
-        </div>
-        <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
-          <img src="./assets/imgs/opinie3.svg" />
-        </div>
-      </div>
-    </div>
 
         <!-- tablet-->
         <div class="hidden md:block lg:hidden">
-          <div class="flex  flex-col gap-6 md:flex-row flex-wrap gap-6mt-3 md:mt-10 lg:mt-10 items-center justify-center">
+          <div
+            class="flex  flex-col gap-6 md:flex-row flex-wrap gap-6mt-3 md:mt-10 lg:mt-10 items-center justify-center">
             <div class="flex-1 mt-3 md:mt-10 lg:mt-10">
               <img src="./assets/imgs/opinie1.svg" />
             </div>
@@ -693,112 +700,130 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.min.css
               <img src="./assets/imgs/opinie3.svg" />
             </div>
           </div>
-       
+
         </div>
-  
 
 
 
-    <div class="col-span-12 flex justify-end mt-6 px-12">
-      <a href="https://maps.app.goo.gl/ohboBMfLMXJv8JoY8" target="_blank">
-        <button class="text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-3 md:mt-10 lg:mt-6 rounded-full" data-key="opinionBtn"></button>
-      </a>
+
+        <div class="col-span-12 flex justify-end mt-6 px-12">
+          <a href="https://maps.app.goo.gl/ohboBMfLMXJv8JoY8" target="_blank">
+            <button
+              class="text-base hover:text-[#062B22] text-[#168D71] border-2 border-[#168D71] hover:border-[#062B22] py-1.5 px-2 mt-3 md:mt-10 lg:mt-6 rounded-full"
+              data-key="opinionBtn"></button>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-      
+
     <!-- contact us block -->
-<div class="bg-[#062B22] w-full">
-  <div class="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-32 pb-12">
-    <div class="grid grid-cols-12 gap-6">
-      <a href="#main" class="col-span-12 mt-10"><img src="./assets/imgs/logo_footer.svg" class="col-span-12 mt-3 md:mt-10 lg:mt-10" /></a>
-    </div>
-    <div class="grid grid-cols-12 gap-6 mt-3 md:mt-10 lg:mt-10">
-      <div class="col-span-12 md:col-span-6 mt-3 md:mt-10 lg:mt-10" id="contactUs">
-       
-        <form class="text-[#FCF5DB]" id="form" action="sender.php" method="POST" >
-          <h3 data-key="contactUsTitle"></h3>
-          
-          <div class="mb-5 mt-5 text-3xl font-normal"> 
-            <label class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsName" ></label>
-            <input type="text" id="name" name="name"  class="nameForm w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5"   oninput="validateNameInput()" required />
-            <p id="nameFeedback" class="text-rose-400 text-sm mt-2"></p>
+    <div class="bg-[#062B22] w-full">
+      <div class="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-32 pb-12">
+        <div class="grid grid-cols-12 gap-6">
+          <a href="#main" class="col-span-12 mt-10"><img src="./assets/imgs/logo_footer.svg"
+              class="col-span-12 mt-3 md:mt-10 lg:mt-10" /></a>
+        </div>
+        <div class="grid grid-cols-12 gap-6 mt-3 md:mt-10 lg:mt-10">
+          <div class="col-span-12 md:col-span-6 mt-3 md:mt-10 lg:mt-10" id="contactUs">
+
+            <form class="text-[#FCF5DB]" id="form" action="./sender.php" method="POST">
+              <h3 data-key="contactUsTitle"></h3>
+
+              <div class="mb-5 mt-5 text-3xl font-normal">
+                <label class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsName"></label>
+                <input type="text" id="name" name="name"
+                  class="nameForm w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5"
+                  oninput="validateNameInput()" required />
+                <p id="nameFeedback" class="text-rose-400 text-sm mt-2"></p>
+              </div>
+
+              <div class="mb-5">
+                <label class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsPhone"></label>
+                <input type="text" id="phone" name='phone'
+                  class="phoneForm w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5"
+                  oninput="validatePhoneInput()" required />
+                <p id="phoneFeedback" class="text-rose-400 text-sm mt-2"></p>
+              </div>
+              <div class="mb-5">
+
+                <label class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsMail"></label>
+                <input type="email" id="email" name="email"
+                  class="email w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5"
+                  placeholder="email@gmail.com" oninput="validateEmailInput()" required />
+                <p id="emailFeedback" class="text-rose-400 text-sm mt-2"></p>
+              </div>
+
+              <div class="mb-5">
+                <label class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsMessage"></label>
+                <textarea name="text" id="message"
+                  class="messageForm w-full h-[106px] bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 p-2.5"
+                  name="message" oninput="validateMessageInput()" required></textarea>
+                <p id="messageFeedback" class="text-rose-400 text-sm mt-2"></p>
+              </div>
+
+              <div class="w-full flex justify-end">
+                <button type="submit"
+                  class="send-form py-2.5 mt-4 px-5 mb-2 text-sm font-medium text-[#FCF5DB] focus:outline-none rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                  data-key="contactUsBtn"></button>
+              </div>
+
+
+
+            </form>
+
+
           </div>
-
-          <div class="mb-5">
-            <label  class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsPhone"></label>
-            <input type="text" id="phone" name='phone'  class="phoneForm w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5"    oninput="validatePhoneInput()" required/>
-            <p id="phoneFeedback" class="text-rose-400 text-sm mt-2"></p>
+          <div class="col-span-12 md:col-start-8 md:col-end-12 mt-3 md:mt-10 lg:mt-10 text-[#FCF5DB]">
+            <h3 data-key="contactUsTitleSecond"></h3>
+            <div class="flex gap-6 mt-3 md:mt-10 lg:mt-10 text-sm font-light text-[#FCF5DB]">
+              <div data-key="contactUsTitlePhone2" class="min-w-[80px]"></div>
+              <a data-key="contactUsPhone2" href="tel:+48793136240" class="pointer"></a>
+            </div>
+            <div class="flex gap-6 mt-5 text-sm font-light text-[#FCF5DB]">
+              <div data-key="contactUsTitleMail2" class="min-w-[80px]"></div>
+              <div data-key="contactUsMail2"></div>
+            </div>
+            <div class="flex gap-6 mt-5 text-sm font-light text-[#FCF5DB]">
+              <div data-key="contactUsTitleAdress" class="min-w-[80px]"></div>
+              <div data-key="contactUsAdress" class="whitespace-nowrap"></div>
+            </div>
+            <h3 class="mt-3 md:mt-10 lg:mt-10text-[#FCF5DB]" data-key="contactUsTitleSocial"></h3>
+            <div class="mt-8 flex gap-6">
+              <a href="https://wa.me/+48793136240"><img src="./assets/icons/WhatsApp.svg" /></a>
+              <a href="https://www.facebook.com/filip.kostek.1"><img src="./assets/icons/Facebook.svg" /></a>
+            </div>
           </div>
-          <div class="mb-5">
-
-            <label class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsMail"></label>
-            <input type="email" id="email" name="email" class="email w-full bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5" placeholder="email@gmail.com"  oninput="validateEmailInput()"  required/>
-            <p id="emailFeedback" class="text-rose-400 text-sm mt-2"></p>
-          </div>
-          
-          <div class="mb-5">
-            <label  class="block mb-2 text-sm font-light text-[#FCF5DB]" data-key="contactUsMessage"></label>
-            <textarea name="text" id="message" class="messageForm w-full h-[106px] bg-[#FCF5DB] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 p-2.5"  name="message" oninput="validateMessageInput()" required></textarea>
-            <p id="messageFeedback" class="text-rose-400 text-sm mt-2"></p>
-          </div>
-          
-          <div class="w-full flex justify-end">
-            <button type="submit"  class="send-form py-2.5 mt-4 px-5 mb-2 text-sm font-medium text-[#FCF5DB] focus:outline-none rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100" data-key="contactUsBtn"></button>
-          </div>
-
-
-
-        </form>
-
-
+        </div>
+        <div class="grid grid-cols-12 gap-6">
+          <span class="col-span-12 text-center mt-5 md:mt-10 lg:mt-12 text-[#FCF5DB]">2021 Sed Sensum</span>
+        </div>
       </div>
-      <div class="col-span-12 md:col-start-8 md:col-end-12 mt-3 md:mt-10 lg:mt-10 text-[#FCF5DB]">
-        <h3 data-key="contactUsTitleSecond"></h3>
-        <div class="flex gap-6 mt-3 md:mt-10 lg:mt-10 text-sm font-light text-[#FCF5DB]">
-          <div data-key="contactUsTitlePhone2" class="min-w-[80px]"></div>
-          <a data-key="contactUsPhone2" href="tel:+48793136240" class="pointer"></a>
-        </div>
-        <div class="flex gap-6 mt-5 text-sm font-light text-[#FCF5DB]">
-          <div data-key="contactUsTitleMail2" class="min-w-[80px]"></div>
-          <div data-key="contactUsMail2"></div>
-        </div>
-        <div class="flex gap-6 mt-5 text-sm font-light text-[#FCF5DB]">
-          <div data-key="contactUsTitleAdress" class="min-w-[80px]"></div>
-          <div data-key="contactUsAdress" class="whitespace-nowrap"></div>
-        </div>
-        <h3 class="mt-3 md:mt-10 lg:mt-10text-[#FCF5DB]" data-key="contactUsTitleSocial"></h3>
-        <div class="mt-8 flex gap-6">
-          <a href="https://wa.me/+48793136240"><img src="./assets/icons/WhatsApp.svg" /></a>
-          <a href="https://www.facebook.com/filip.kostek.1"><img src="./assets/icons/Facebook.svg" /></a>
-        </div>
-      </div>
     </div>
-    <div class="grid grid-cols-12 gap-6">
-      <span class="col-span-12 text-center mt-5 md:mt-10 lg:mt-12 text-[#FCF5DB]">2021 Sed Sensum</span>
-    </div>
+
+
+
   </div>
-</div>
+
+  </div>
 
 
+  <script src="./script.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/inputmask.min.js"
+    integrity="sha512-c7JzgpnsV8xF9fgCSaIQrjcC3EOBc6L9og90EYx2IcFz9A1W9YojWpZXV4tmftOCNVhRMIGJCE0Z1mHcbV/g+g=="
+    crossorigin="anonymous"></script>
 
-    </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/libphonenumber-js/bundle/libphonenumber-js.min.js"></script>
 
-    </div>
-
-
-    <script src="./script.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/inputmask.min.js" integrity="sha512-c7JzgpnsV8xF9fgCSaIQrjcC3EOBc6L9og90EYx2IcFz9A1W9YojWpZXV4tmftOCNVhRMIGJCE0Z1mHcbV/g+g==" crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
   <script src="
 https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.all.min.js
 "></script>
-  </body>
+</body>
+
 </html>

@@ -233,23 +233,23 @@ function validateNameInput() {
 }
 
 function validatePhoneInput() {
-  const phoneInput = document.getElementById("phone").value.trim();
-  const feedbackElement = document.getElementById("phoneFeedback");
+    const phoneInput = document.getElementById("phone").value.trim();
+    const feedbackElement = document.getElementById("phoneFeedback");
 
-  const phoneRegex =
-    /^(\+?3?8?)?(\(?0\d{2}\)?[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2})$/;
-
-  if (phoneRegex.test(phoneInput)) {
-    feedbackElement.textContent = "";
-    return true;
-  } else {
-    feedbackElement.textContent =
-      currentLanguaage === "en"
-        ? "Please enter a valid phone number."
-        : "Proszę wpisać poprawny numer telefonu";
-    return false;
+    try {
+      const phoneNumber = libphonenumber.parsePhoneNumber(phoneInput);
+      if (phoneNumber.isValid()) {
+        feedbackElement.textContent = "";
+        return true;
+      } else {
+        feedbackElement.textContent = "Invalid phone number";
+        return false;
+      }
+    } catch (e) {
+      feedbackElement.textContent = "Invalid phone number format";
+      return false;
+    }
   }
-}
 function validateEmailInput() {
   const emailInput = document.getElementById("email").value;
   const feedbackElement = document.getElementById("emailFeedback");
