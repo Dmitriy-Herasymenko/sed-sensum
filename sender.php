@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $text = $_POST['text'];
 
-    $to = "sedsensum@gmail.com"; 
+    $to = "shiningxors@gmail.com"; 
     $date = date ("d.m.Y"); 
     $time = date ("h:i");
     $from = $email;
@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mail($to, $subject, $msg, "From: $from ")) {
         echo "<script>";
         echo "alert('Formularz przesłany pomyślnie');";
-        echo "window.location.href = 'http://sed-sensum.pl/';";
+        echo "window.location.href = 'https://sed-sansum.vercel.app/';";
         echo "</script>";
         exit; 
     } else {
